@@ -1,0 +1,90 @@
+main{
+  
+  /*Hex*/
+  color:#000;
+  background-color:#fff;
+  color:#405721FF; /*Hex + transperancy*/
+  font-family:"Times new roman", serif;
+  /*RGB*/
+  background-color:rgb(255,0,0);
+  background-color:rgb(0,255,0)
+  
+  /* RGB + opacity
+  background-color:rgb(0,122,0,0.5);*/
+
+  /* HSL (Hue, Saturation, Lightness
+  backgroundcolor:hsl(240,50%,50%);*/
+  
+  /*HLSA (+opacity)
+  background-color:hsla(240,50%,70%,0.7):*/
+  
+  /*Predefined names- color:forestgreen;*/
+  /*Serif - fötter, sans-serif - utan fötter, monospace - lika breda, cursive - fantasy
+  font-family:Papyrus,*/
+  
+}
+
+/*
+Text:
+  px - pixels (absolute enhet) Undvik med absoluta enheter om man gör responsiv design
+  em - relativ enhet, relativ föräldraelement ändrar vilket storlek föräldraemlementet har
+    föräldraelement: 16px
+    barnelement: 1em;
+    1*16 så har barnelementet också 16px
+  rem - relativ enhet, relativ html-elementet
+    html-elementet: 8px;
+    barnelementet: 2rem; (2*8)
+Element på sidan:
+    % - relativ enhet, relativ föräldrarelement
+    föräldraelement: 1920px;
+   width:50% (barnelementet)
+  vh - står för viewport height
+    height:2vh; (2% av viewport  height)
+    height:10vh; (10% av viewport  height)
+  vw - viewport width
+    width:0.7vw; (0,7% av viewport width)
+*/
+nav{
+  width:100vw;
+  position:fixed;
+  top:0;
+  left:0;
+
+}
+
+main{
+  margin-top:15vh;
+  
+}
+li{
+  width:30vw;
+  display:inline-block;
+  text-align:center;
+}
+
+a{
+  display:block;
+  text-decoration:none;
+  color:lightgreen;
+  padding:2vh 2vw;
+  font-size: 3vh;
+}
+
+a:hover{
+background-color:antiquewhite;
+color:white;
+}
+
+table{
+  border-collapse:collapse;
+  width:70vw;
+  margin:auto; /*för element, för text: text-align:center;*/
+  font-size:2rem;
+}
+
+th, td{
+  margin:0;
+  padding:10px;
+  border:solid black;
+  font-size:0.8em;
+}

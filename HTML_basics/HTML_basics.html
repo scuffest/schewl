@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <title>HTML Kunskapssida</title>
+  <meta name="viewport" contentt="width=device-width">
+  <meta charset="utf-8">
+<!--Vi använder oss av viewport så att hemsidan ska fungera och att man ska kunna se den på mobilen
+Vi använder charset för att indentifiera olika tecken-->
+</head>
+
+<body>
+  <main>
+    <h1>HTML Kunskapssida</h1>
+    <section>
+      <h2>Vad är HTML och vad används det för?</h2>
+      <p>HTML står för HyperText Markup Language och används för att skapa strukturen och innehållet på webbsidor. Det är ett märkspråk som använder taggar för att definiera olika delar av en sida.</p>
+      <h2>Beskriv strukturen i ett HTML-dokument.</h2>
+      <p>Grundstruktur i HTML-dokument. “omger” innehåll som tolkas av webbläsare. Syntax. !DOCTYPE html, img, nav</p>¨
+      <h2>Vad är ett element? Ge exempel.</h2>
+      <p>Definierar objekt i HTML-struktur. Webbläsare utgår från element för att tolka struktur. Kan vara tomma. Exempel på element är rubriker: h1>.../h1> eller paragraf eller bild (img) </p>
+      <h2>Vad är ett attribut? Ge exempel</h2>
+      <p>Anger ytterligare information om taggar. Id och klass är attribut.</p>
+      <h2>Vilka är de viktigaste skillnaderna mellan HTML5 och HTML4?</h2>
+      <p>HTML5 standard, annorlunda sätt av innehåll än HTML 4. Olika versioner av samma språk. HTML4 använder mycket mer div som man gav attributet id som säger att det är ett div. </p>
+      <h2>Vad är XML och XHTML?</h2>
+      <p> XML är mer flexibelt än HTML, möjlighet att själv definiera element och datastruktur, används ofta för dataöverföring, mer kontroll över dess struktur. XHTML är mer strikt än HTML Syntax måste vara korrekt för att kunna fungera, mer konsekvent hantering av element kan leda till mer lättförståeligt och bättre strukturerat kod.</p>
+      <h2>Vad är DOM, och varför är den viktig?</h2>
+      <p>DOM= Document Object Model, Representation över hemsidans struktur, Viktigt att klient ska strukturera hemsidan. DOM kan ändra textinnehåll/attribut/stil av element, eller ändra på hemsidan. Genereras utifrån din HTML-kod, representation av hierarki, användbart för att låta klient modda sida.</p>
+      <a href="https:///wwww.youtube.com">Youtube</a> 
+    </section>
+  </main>
+  <footer>
+    <p>Skapad: 2023-09-01</p>
+    <p>Författare: Joakim Alcaino</p>
+    <p>Kontakt: joakim.alcaino@elev.ga.lbs.se</p>
+  </footer>
+  <h1>Formatera text med HTML</h1>
+
+  <pre>        
+    Allt vi skriver 
+    inom pre-taggar 
+    behåller
+    sin formatering
+  </pre>
+
+  <hr />
+<!--hr - grouperings tag och text-level tag, uppbrytning, lite som section-taggen-->
+
+  <h2>Text-level Tags</h2>
+
+  <pre>
+<!--pre-tag är grouping content tag, den grouperar-->
+
+  <small>small lvl -1 - t.ex. copyright, marginalanteckning</small>
+<!--ge information men inte betona-->
+
+  <b>bold lvl 0 - mest visuellt</b>
+<!--bold, ord som man vill stå ut, används visuellt-->
+  
+  <i>italics lvl 1 - t.ex. tekniska termer</i>
+<!--italics-->
+  
+  <mark>mark lvl 1.5 - highlightad text, kanske refereras till</mark>
+<!--markering-->
+
+  <em>emphasis lvl 2 - betoning</em>
+<!--emphasis-->
+  
+  <strong>strong lvl 3 - stark betoning, mycket viktigt/seriöst</strong>
+<!-- något viktigt, något som måstes betonas-->
+  
+  </pre>
+
+  <h2>Citationer</h2>
+
+  <p>
+    
+    <cite>cite - title på verk - t.ex. bok</cite><br />
+<!--titel på ett verk, book, film, dikt, etc-->
+<!--br-tag är en tom tag som används för radbrytning-->
+
+    <q cite="">q - inline citation, kan ha attributet cite för att länka</q>
+<!--citater, quotes-->
+<!--cite-attributet kan man lägga t.ex. en länk som man fick citatet ifrån-->
+
+    <blockquote>blockquotes - används för längre citat</blockquote>
+<!-- längre citat, quotes-->
+
+  </p>
+
+  <h2>Förklarande text-tags</h2>
+  <pre>
+    <dfn>dfn</dfn> används när vi använder en definition som förklaras i kontexten
+<!--definition-->
+
+    <abbr title="abbreviation">abbr</abbr> när vi har en förkortning
+<!--abbreviation, förkortningar som t.ex. www-->
+<!--title-attributet gör att man kan hovera texten för att se förkortningen-->
+
+  </pre>
+
+  <h2>Blandat</h2>
+  <pre>
+    <code>code - för en datorgenererad kod</code>
+<!--lite annan font-->
+
+    <var>var - till för matematiska variable</var>
+<!--t.ex. för materäkningar utan plugins-->
+</body>
+</html>
