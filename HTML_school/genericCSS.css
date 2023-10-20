@@ -39,11 +39,10 @@ h2{
   font-size:3vh;
 }
 
-p{
+p, ul{
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size:3vh;
 }
-
 
 
 article{
@@ -52,7 +51,7 @@ article{
   justify-content: space-between;
   align-items: center;
   border-radius: 25px;
-  background-color: #e1e1e1;
+  background-color: #fbf8f8;
   margin-left: 10em;
   margin-right: 10em;
   padding:3em;
