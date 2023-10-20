@@ -2,9 +2,9 @@
 <html lang="sv">
   <head>
     <title>CSSkunskapssida</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="genericCSS.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="genericCSS.css" />
   </head>
   <body>
     <nav>
@@ -21,42 +21,130 @@
     <main>
       <h1>Kunskap om CSS</h1>
       <article>
-      <h2>1. Vad är CSS? Hur används det? </h2>
-      <p>Cascading style sheet, användes för att stilisera HTML-kod, styra utseendet och layouten av webbsidor. CSS använder selektorer för att rikta stilmallen till specifika element, Kaskadmodellen avgör vilken stil som ska användas om flera stilar tillämpas på samma element, boxmodellen.</p>
-      <h2>2. Vad är skillnaden mellan inline-stil, inbäddad stil och extern stil i CSS?</h2>
-      <p>Inbäddad CSS är i HTML och då riktar vi det mot element och beskriver vad vi vill göra med den.
-        Inline är att man skriver direkt i taggen. 
-        Extern innebär att css koden finns inte html koden men i en separat kod och sedan länkar ihop den med HTML link rel=”stylesheet” type=”text/css” href=”style.css”></p>
-      <h2>3. Vad är en selektor i CSS och hur används den?</h2>
-      <p>Används för att välja och tillämpa stilar på specifika HTML-element och det finns primärt fem sorters selektorer.</p>
-      <h2>4. Vad är skillnaden mellan klass-selektor och ID-selektor i CSS?</h2>
-      <p>ID är ett specifikt namn, det är speciellt på något sätt, ID blir bara existerat en gång jämfört med klass som kan användas flera gånger. Klass kan man ge till flera element.</p>
-      <h2>5. Vad är kaskadordningen i CSS och hur påverkar den hur stilar tillämpas på element?</h2>
-      <p>ID är ett specifikt namn, det är speciellt på något sätt, ID blir bara existerat en gång jämfört med klass som kan användas flera gånger. Klass kan man ge till flera element.</p>
-      <h2>6. Vad är kaskadordningen i CSS och hur påverkar den hur stilar tillämpas på element?</h2>
-      <p> Följer en viss ordning för att avgöra vilka stilregler som tillämpas på ett element, samt när regler har företräde vid en konflikt. </p>
-      <h2>7. Kaskadmodellen är en algoritm som väljer värde(n) som ska appliceras element enligt</h2>
+        <h2>1. Vad är CSS? Hur används det?</h2>
+        <p>
+          Cascading style sheet, användes för att stilisera HTML-kod, styra
+          utseendet och layouten av webbsidor. CSS använder selektorer för att
+          rikta stilmallen till specifika element, Kaskadmodellen avgör vilken
+          stil som ska användas om flera stilar tillämpas på samma element,
+          boxmodellen.
+        </p>
+        <h2>
+          2. Vad är skillnaden mellan inline-stil, inbäddad stil och extern stil
+          i CSS?
+        </h2>
+        <p>
+          Inbäddad CSS är i HTML och då riktar vi det mot element och beskriver
+          vad vi vill göra med den. Inline är att man skriver direkt i taggen.
+          Extern innebär att css koden finns inte html koden men i en separat
+          kod och sedan länkar ihop den med HTML link rel=”stylesheet”
+          type=”text/css” href=”style.css”>
+        </p>
+        <h2>3. Vad är en selektor i CSS och hur används den?</h2>
+        <p>
+          Används för att välja och tillämpa stilar på specifika HTML-element
+          och det finns primärt fem sorters selektorer.
+        </p>
+        <h2>
+          4. Vad är skillnaden mellan klass-selektor och ID-selektor i CSS?
+        </h2>
+        <p>
+          ID är ett specifikt namn, det är speciellt på något sätt, ID blir bara
+          existerat en gång jämfört med klass som kan användas flera gånger.
+          Klass kan man ge till flera element.
+        </p>
+        <h2>
+          5. Vad är kaskadordningen i CSS och hur påverkar den hur stilar
+          tillämpas på element?
+        </h2>
+        <p>
+          ID är ett specifikt namn, det är speciellt på något sätt, ID blir bara
+          existerat en gång jämfört med klass som kan användas flera gånger.
+          Klass kan man ge till flera element.
+        </p>
+        <h2>
+          6. Vad är kaskadordningen i CSS och hur påverkar den hur stilar
+          tillämpas på element?
+        </h2>
+        <p>
+          Följer en viss ordning för att avgöra vilka stilregler som tillämpas
+          på ett element, samt när regler har företräde vid en konflikt.
+        </p>
+        <h2>
+          7. Kaskadmodellen är en algoritm som väljer värde(n) som ska
+          appliceras element enligt
+        </h2>
         <ul>
-          <li>Arv (Inheritance) - Om element saknar regel så söks en “förälders” stilregler och appliceras.</li>
-          <li>Relevans (Relevance) Behåller enbart regler som matchar element</li>
-          <li>Ursprung och betydelse (Origin and importance) - Sorterar regler baserat på hur viktiga de är och vem som applicerat dem.</li>
-          <li>Noggrannhet (specificity) - Väljer regler med högre specificitet om relevanta regler har samma ursprung och betydelse.</li>
-          <li>Ordning (order of appearance) - Om specifika regler har samma ursprung och betydelse väljer kaskadmodellen det senast angivna värdet i källkoden.</li>
-       </ul> 
-      <h2>8. Vad är responsiv webbdesign och hur kan CSS användas för att skapa responsiva layouter?</h2>
-      <p>Man kan använda flexbox och grid layouts. Det är att göra så att hemsidan ser bra ut och så att alla ska kunna navigera hemsidan.</p>
-      <h2>9. Vad är boxmodellen i CSS och vilka element påverkas av den?</h2>
-      <p>Alla HTML-elementet ses som boxar (tänk lådor), innehåll innerst, omges av padding som i  sin tur omges av border och sist margin. Använd “float” och “clear” för att positionera.</p>
-      <p> Längst in är det Content, efter det är padding och padding frigör utrymme runt innehållet och till sist Margin som frigör utrymme till andra boxar utanför innehållet.</p>
-      <h2>10. Vad är "grid layout" och hur skiljer det sig från "flexbox"?</h2>
-      <p>Flexbox utvecklades för responsiv design, det har inbyggt att man kan krympa/växa element beroende på skärmstorleken. Flexbox är en “light version” av grid layouts.
-        Gridlayout kan innehålla både rader och kolumner, till skillnad från flexbox kan gå i en riktning.</p> 
-        <h2>11. Vad är skillnaden mellan positionering med "static", "relative", "absolute" och "fixed" i CSS?</h2>
+          <li>
+            Arv (Inheritance) - Om element saknar regel så söks en “förälders”
+            stilregler och appliceras.
+          </li>
+          <li>
+            Relevans (Relevance) Behåller enbart regler som matchar element
+          </li>
+          <li>
+            Ursprung och betydelse (Origin and importance) - Sorterar regler
+            baserat på hur viktiga de är och vem som applicerat dem.
+          </li>
+          <li>
+            Noggrannhet (specificity) - Väljer regler med högre specificitet om
+            relevanta regler har samma ursprung och betydelse.
+          </li>
+          <li>
+            Ordning (order of appearance) - Om specifika regler har samma
+            ursprung och betydelse väljer kaskadmodellen det senast angivna
+            värdet i källkoden.
+          </li>
+        </ul>
+        <h2>
+          8. Vad är responsiv webbdesign och hur kan CSS användas för att skapa
+          responsiva layouter?
+        </h2>
+        <p>
+          Man kan använda flexbox och grid layouts. Det är att göra så att
+          hemsidan ser bra ut och så att alla ska kunna navigera hemsidan.
+        </p>
+        <h2>9. Vad är boxmodellen i CSS och vilka element påverkas av den?</h2>
+        <p>
+          Alla HTML-elementet ses som boxar (tänk lådor), innehåll innerst,
+          omges av padding som i sin tur omges av border och sist margin. Använd
+          “float” och “clear” för att positionera.
+        </p>
+        <p>
+          Längst in är det Content, efter det är padding och padding frigör
+          utrymme runt innehållet och till sist Margin som frigör utrymme till
+          andra boxar utanför innehållet.
+        </p>
+        <h2>
+          10. Vad är "grid layout" och hur skiljer det sig från "flexbox"?
+        </h2>
+        <p>
+          Flexbox utvecklades för responsiv design, det har inbyggt att man kan
+          krympa/växa element beroende på skärmstorleken. Flexbox är en “light
+          version” av grid layouts. Gridlayout kan innehålla både rader och
+          kolumner, till skillnad från flexbox kan gå i en riktning.
+        </p>
+        <h2>
+          11. Vad är skillnaden mellan positionering med "static", "relative",
+          "absolute" och "fixed" i CSS?
+        </h2>
         <ul>
-          <li>Relativ: positionerar relativt till sitt ursprungliga läge, men påverkas av andra regler.</li>
-          <li>Fixed: Fast position i förhållande till webbläsarfönstret och påverkas inte av scrolling lämnar inte utrymme på sidan där det “normal” skulle placeras.</li>
-          <li>Absolute: Positionerar relativt till närmaste föräldrars element istället för till webbläsarfönstret. Om ingen förälder finns så positioneras elementet relativt body och följer med scrolling.</li>
+          <li>
+            Relativ: positionerar relativt till sitt ursprungliga läge, men
+            påverkas av andra regler.
+          </li>
+          <li>
+            Fixed: Fast position i förhållande till webbläsarfönstret och
+            påverkas inte av scrolling lämnar inte utrymme på sidan där det
+            “normal” skulle placeras.
+          </li>
+          <li>
+            Absolute: Positionerar relativt till närmaste föräldrars element
+            istället för till webbläsarfönstret. Om ingen förälder finns så
+            positioneras elementet relativt body och följer med scrolling.
+          </li>
         </ul>
       </article>
+    </main>
   </body>
 </html>
