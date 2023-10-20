@@ -56,3 +56,12 @@ article {
   margin-right: 10em;
   padding: 3em;
 }
+
+
+table{
+  border-collapse:collapse;
+}
+th, td{
+  border:1px solid black; 
+  padding:5px;
+}
