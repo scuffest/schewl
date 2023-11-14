@@ -1,0 +1,57 @@
+
+.navbar ul{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+.heading{
+  font-size: 3rem;
+}
+
+
+.gallery img{
+  width: 270px;
+  height: 360px;
+}
+
+
+.ommig{
+  flex-direction: column;
+}
+.ommig h2{
+  text-align: center;
+}
+
+.ommig img{
+  width: 200px;
+  height: 150px;
+  padding: 0px 15px;
+}
+
+#meddelande{
+  width: 40%;
+  height: 200px;
+}
+
+.box{
+  height: 150px;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+}
+.box h2{
+  color: yellowgreen;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.box p{
+  color: white;
+  font-size: .8rem;
+}
+#name p{
+  font-size: 1rem;
+}

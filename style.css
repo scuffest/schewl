@@ -1,0 +1,235 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+
+}
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+.navbar::before{
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.navbar ul{
+  display: flex;
+  list-style: none;
+}
+.navbar ul li{
+  font-size: 1.1rem;
+}
+.navbar ul li a{
+  padding: 5px 30px;
+  text-decoration: none;
+  color: white;
+}
+.navbar ul li a:hover{
+  border-bottom: 2px solid greenyellow;
+}
+
+
+#hem{
+  display: flex;
+  flex-direction: column;
+  height: 650px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+#hem::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('./Jorge-Gonzales-copy-e1549542198131_680x532_90b816aa6f09aabede787d2cd0a18b40.jpg') no-repeat center center/cover;
+  height: 700px;
+  width: 100%;
+  z-index: -1;
+  opacity: 10.8;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+}
+.heading{
+  color: white;
+  font-size: 5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  transform: scale(1,1.3);
+}
+
+#portfolio{
+  display: flex;
+  flex-direction: column;
+  background-color: #000000dc;
+}
+#portfolio h1{
+  margin: 60px;
+}
+.gallery{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.gallery img{
+  width: 360px;
+  height: 640px;
+  padding: 10px;
+  margin: 10px;
+}
+.gallery img:hover{
+  background-color: white;
+  cursor: pointer;
+}
+
+
+#utbildning{
+  display: flex;
+  flex-direction: column;
+  background-color: #000000dc;
+}
+#utbildning h1{
+  margin: 60px;
+}
+.columns{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 150px;
+  padding-bottom: 150px;
+}
+.box{
+  height: 200px;
+  width: 350px;
+  background-color: rgba(101, 182, 35, 0.1);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.box:hover{
+  background-color: rgba(169, 179, 40, 0.986);
+  
+}
+
+
+.box h2{
+  color: yellowgreen;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+
+.box:hover h2{
+  color:bisque
+  
+}
+.box p{
+  color: white;
+  font-size: 1.1rem;
+}
+
+
+#ommig{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  height: 100%;
+}
+#ommig h1{
+  color: black;
+  margin: 55px;
+}
+.ommig{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+  
+
+}
+.ommig img{
+  width: 500px;
+  height: 400px;
+  padding: 0px 30px;
+}
+.name{
+  padding: 20px;
+  border: 3px black solid;
+  border-radius: 10px;
+  background-color: rgba(101, 182, 35, 0.1);
+  position: relative; left: -20px; top: -15px;
+
+}
+.name h2{
+  font-size: 2rem;
+  position: relative; left: 1px;
+}
+.name p{
+  font-size: 1.2rem;
+  position: relative; left: 1px;
+
+}
+
+
+#kontakta{
+  display: flex;
+  flex-direction: column;
+  background-color: #000000dc;
+}
+#kontakta h1{
+  margin: 50px ;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input{
+  padding: 15px 20px;
+  margin: 15px;
+  width: 40%;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+}
+#meddelande{
+  margin: 15px;
+  padding: 10px;
+  border-radius: 20px;
+}
+#submit{
+  padding: 15px 20px;
+  margin: 30px;
+  width: 15%;
+  border-radius: 20px;
+  background-color: #000000dc;
+  color: white;
+  border: none;
+  outline: none;
+}
+#submit:hover{
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+.name-invs{
+  visibility: hidden;
+}
+
+.idpo{
+  visibility: hidden;
+}
