@@ -1,0 +1,52 @@
+/*standard typ-selektorer*/
+
+main{
+  font-size: 2em;
+  columns: 3;
+}
+
+p{
+  margin:0;
+}
+
+/*och klass-selektorer*/
+.writers{
+  break-before: column;
+}
+
+.analysis{
+  margin-top:5%;
+}
+
+/*och id-selektor*/
+#poe{
+  font-family: "Garamond", "Times New Roman", serif;
+}
+
+/*Now some cooler stuff B) */
+
+/* compound selector leter efter exakta selector och man har inga mellanrum*/
+p.quote#poe{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* descendent selector (complex selector) - väljer alla element under förälder elementet (barn, barnbarn ect.)*/
+
+.writers p{
+  color: goldenrod;
+}
+/*Påverkar bara element som ligger direkt under*/
+.writers > p{
+  font-size: 3rem;
+}
+
+/*påverkar ENBART element direkt efter element*/
+.analysis + p{
+  color:gray;
+}
+
+.writers,
+.quote,
+.analysis{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
