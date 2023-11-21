@@ -48,6 +48,7 @@ html{
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
+  text-align: center;
 }
 #hem::before{
   content: "";
