@@ -115,7 +115,7 @@ html{
   position: absolute;
   top: 0;
   left: 0;
-  background: url('https://media.discordapp.net/attachments/1030926894230675489/1173931359279001770/Jorge-Gonzales-copy-e1549542198131_680x532_90b816aa6f09aabede787d2cd0a18b40.jpg?ex=6565bfc6&is=65534ac6&hm=2ffdffac669f2a46e797d38c069d35cca6a9be408799bcb9654d15e534044334&=&width=756&height=591') no-repeat center center/cover;
+  background: url('https://cdn.discordapp.com/attachments/1030926894230675489/1181688647620239420/jorgegonzalezwebb.png?ex=6581f850&is=656f8350&hm=b7af17d28a50e153ec3d58355ea42bb95652f9b6916598e1123b8279c24042e5&') no-repeat center center/cover;
   height: 700px;
   width: 100%;
   z-index: -1;
@@ -174,20 +174,20 @@ html{
 .box{
   height: 200px;
   width: 350px;
-  background-color: rgba(101, 182, 35, 0.1);
+  background-color: rgb(55, 100, 126);
   border-radius: 20px;
   margin: 10px;
   padding: 20px;
 }
 
 .box:hover{
-  background-color: rgba(169, 179, 40, 0.986);
+  background-color: rgba(40, 137, 179, 0.986);
   
 }
 
 
 .box h2{
-  color: yellowgreen;
+  color: rgb(176, 214, 248);
   font-size: 2rem;
   margin-bottom: 40px;
 }
@@ -284,7 +284,7 @@ html{
   outline: none;
 }
 #submit:hover{
-  background-color: green;
+  background-color: rgb(0, 102, 128);
   color: white;
   cursor: pointer;
 }
