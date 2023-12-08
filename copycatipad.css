@@ -1,34 +1,84 @@
-.columns{
+.columns {
   justify-content: center;
   padding-left: 20px;
 }
-.box{
+
+.box {
   height: 200px;
-  width: 400px;
+  width: 80%; /* Adjusted width for smaller screens */
+  max-width: 400px; /* Added a max-width for larger screens */
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   margin: 10px;
   padding: 10px;
 }
-.box h2{
+
+.box h2 {
   font-size: 1.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Adjusted margin for smaller screens */
 }
-.box p{
+
+.box p {
   font-size: 1rem;
 }
 
-.ommig img{
-  padding: 0px 20px;
-  width: 400px;
-  height: 300px;
+.ommig img {
+  padding: 0px 10px; /* Adjusted padding for smaller screens */
+  width: 100%; /* Ensure image width is 100% of the container */
+  height: auto; /* Maintain aspect ratio for responsive images */
 }
-.name{
+
+.name {
   padding: 5px;
 }
-.name h2{
+
+.name h2 {
   font-size: 1.7rem;
 }
-.name p{
+
+.name p {
   font-size: 1rem;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .box {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .ommig img {
+    padding: 0px 5px;
+  }
+
+  .name {
+    padding: 2px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .box {
+    width: 100%;
+    max-width: none;
+  }
+
+  .box h2 {
+    font-size: 1.2rem;
+  }
+
+  .ommig img {
+    padding: 0px 5px;
+  }
+
+  .name {
+    padding: 2px;
+  }
+
+  .name h2 {
+    font-size: 1.5rem;
+  }
+
+  .name p {
+    font-size: 0.9rem;
+  }
 }

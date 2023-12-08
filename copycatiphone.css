@@ -1,63 +1,93 @@
-
-.columns{
+.columns {
   grid-template-columns: auto;
   justify-content: center;
 }
-.box{
+
+.box {
   height: 200px;
-  width: 500px;
+  width: 80%; /* Adjusted width for smaller screens */
+  max-width: 500px; /* Added a max-width for larger screens */
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   margin: 10px;
   padding: 20px;
 }
-.box h2{
+
+.box h2 {
   color: yellowgreen;
   font-size: 2rem;
-  margin-bottom: 40px;
+  margin-bottom: 20px; /* Adjusted margin for smaller screens */
 }
-.box p{
+
+.box p {
   color: white;
   font-size: 1.1rem;
 }
 
-.name{
-  padding: 70px;
-  padding-left: 100px;
+.name {
+  padding: 20px; /* Adjusted padding for smaller screens */
   border: 3px black solid;
   border-radius: 10px;
   background-color: rgba(101, 182, 35, 0.1);
-  position: relative; left: -20px; top: -15px;
+  position: relative;
+  left: -20px;
+  top: -15px;
   visibility: hidden;
-
 }
-.name h2{
+
+.name h2 {
   font-size: 2rem;
-  position: relative; left: 1px;
+  position: relative;
+  left: 1px;
 }
-.name p{
+
+.name p {
   font-size: 1.2rem;
-  position: relative; left: 1px;
-
+  position: relative;
+  left: 1px;
 }
 
-.name-invs{
+.name-invs {
   visibility: visible;
   padding: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
   border: 3px black solid;
   border-radius: 10px;
   background-color: rgba(101, 182, 35, 0.1);
-  position: relative; left: 10px; top: -1000px;
+  position: relative;
+  left: 10px;
+  top: -1000px;
 }
 
-.name-invs p{
-  position: relative; left: -10px;
+.name-invs p {
+  position: relative;
+  left: -10px;
 }
 
+.name-invs h2 {
+  position: relative;
+  left: -10px;
+}
 
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .box {
+    width: 90%;
+    max-width: 400px;
+  }
 
-.name-invs h2{
-  position: relative; left: -10px;
+  .name {
+    padding: 10px;
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .box {
+    width: 100%;
+    max-width: none;
+  }
+
+  .name {
+    padding: 5px;
+  }
 }

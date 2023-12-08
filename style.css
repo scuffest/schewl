@@ -1,17 +1,87 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
-  font-family:'Roboto';
-  background-color: #131417;  
+  font-family: 'Roboto';
+  background-color: #131417;
 }
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .containerr {
+    font-size: 1.8rem;
+  }
+
+  .heading {
+    font-size: 4rem;
+    transform: scale(1, 1.2);
+  }
+
+  .gallery img {
+    width: 280px;
+    height: 480px;
+  }
+
+  .box {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .ommig img {
+    width: 300px;
+    height: 240px;
+  }
+
+  .name {
+    margin-left: 5%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .containerr {
+    font-size: 1.5rem;
+  }
+
+  .heading {
+    font-size: 3.5rem;
+    transform: scale(1, 1.1);
+  }
+
+  .gallery img {
+    width: 180px;
+    height: 320px;
+  }
+
+  .box {
+    width: 100%;
+    max-width: none;
+  }
+
+  .ommig img {
+    width: 200px;
+    height: 160px;
+  }
+
+  .name {
+    margin-left: 2%;
+  }
+}
+
+/* Remaining Styles */
 p {
-  text-shadow: 0 0 7px rgba(0, 0, 0, 0.3), 0 0 3px rgba(255,255,255,.3);
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.3), 0 0 3px rgba(255, 255, 255, 0.3);
 }
 .container {
+  max-width: 1050px;
+  width: 90%;
+  margin: auto;
+}
+.containerr {
   color: #e5e5e5;
   font-size: 2.26rem;
   text-transform: uppercase;
@@ -19,20 +89,19 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .animation {
-  height:50px;
-  overflow:hidden;
+  height: 50px;
+  overflow: hidden;
   margin-left: 1rem;
 }
 
 .animation > div > div {
   padding: 0.25rem 0.75rem;
-  height:2.81rem;
+  height: 2.81rem;
   margin-bottom: 2.81rem;
-  display:inline-block;
+  display: inline-block;
 }
 
 .animation div:first-child {
@@ -40,14 +109,19 @@ p {
 }
 
 .first div {
-  background-color:#20a7d8;
+  background-color: #20a7d8;
 }
+
 .second div {
-  background-color:#CD921E;
+  background-color: #cd921e;
 }
+
 .third div {
-  background-color:#c10528;
+  background-color: #c10528;
 }
+
+/* Remaining Styles */
+
 
 @keyframes text-animation {
   0% {margin-top: 0;}
@@ -66,7 +140,8 @@ html{
 
 }
 
-.navbar{
+
+.navbarr{
   display: flex;
   justify-content: center;
   height: 50px;
@@ -75,7 +150,7 @@ html{
   top: 0;
   z-index: 1500;
 }
-.navbar::before{
+.navbarr::before{
   content: "";
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
@@ -83,20 +158,20 @@ html{
   width: 100%;
   z-index: -1;
 }
-.navbar ul{
+.navbarr ul{
   display: flex;
   list-style: none;
 }
-.navbar ul li{
+.navbarr ul li{
   font-size: 1.1rem;
 }
-.navbar ul li a{
+.navbarr ul li a{
   padding: 5px 30px;
   text-decoration: none;
   color: white;
 }
-.navbar ul li a:hover{
-  border-bottom: 2px solid greenyellow;
+.navbarr ul li a:hover{
+  border-bottom: 2px solid rgb(228, 228, 228);
 }
 
 
@@ -126,10 +201,9 @@ html{
 }
 .heading{
   color: white;
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
-  transform: scale(1,1.3);
 }
 
 #portfolio{
@@ -162,15 +236,21 @@ html{
   flex-direction: column;
   background-color: #000000dc;
 }
-#utbildning h1{
-  margin: 60px;
-}
+
 .columns{
   display: grid;
   grid-template-columns: auto auto;
   padding-left: 150px;
   padding-bottom: 150px;
 }
+@media only screen and (max-width: 767px) {
+  .columns {
+    grid-template-columns: auto;
+    padding-left: 10px; /* Adjust as needed */
+    padding-right: 10px; /* Adjust as needed */
+  }
+}
+
 .box{
   height: 200px;
   width: 350px;
@@ -217,13 +297,10 @@ html{
   display: flex;
   align-items: center;
   margin-bottom: 0px;
-  
-
 }
 .ommig img{
-  width: 500px;
-  height: 400px;
-  padding: 0px 30px;
+  width: 50%;
+  height: 50%;
 }
 .name{
   padding: 20px;
@@ -231,9 +308,18 @@ html{
   border-radius: 10px;
   background-color: rgba(25, 28, 22, 0.5);
   position: relative; left: -20px; top: -15px;
-  margin-left: 10%;
-  margin-top: 5%;
+  margin-left: 3%;
+  margin-top: 15%;
 }
+
+@media only screen and (max-width: 767px) {
+  .name {
+    grid-template-columns: auto;
+    padding-left: 10px; /* Adjust as needed */
+    padding-right: 10px; /* Adjust as needed */
+  }
+}
+
 .name h2{
   font-size: 2rem;
   position: relative; left: 1px;

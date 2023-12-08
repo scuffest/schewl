@@ -1,57 +1,105 @@
-
-.navbar ul{
+.navbar ul {
   flex-wrap: wrap;
   justify-content: center;
 }
 
-
-
-.heading{
+.heading {
   font-size: 3rem;
 }
 
-
-.gallery img{
+.gallery img {
   width: 270px;
   height: 360px;
 }
 
-
-.ommig{
+.ommig {
   flex-direction: column;
 }
-.ommig h2{
+
+.ommig h2 {
   text-align: center;
 }
 
-.ommig img{
+.ommig img {
   width: 200px;
   height: 150px;
   padding: 0px 15px;
 }
 
-#meddelande{
-  width: 40%;
+#meddelande {
+  width: 80%; /* Adjusted width for smaller screens */
+  max-width: 400px; /* Added a max-width for larger screens */
   height: 200px;
 }
 
-.box{
+.box {
   height: 150px;
-  width: 250px;
+  width: 80%; /* Adjusted width for smaller screens */
+  max-width: 300px; /* Added a max-width for larger screens */
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   margin: 10px;
   padding: 10px;
 }
-.box h2{
+
+.box h2 {
   color: yellowgreen;
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
-.box p{
+
+.box p {
   color: white;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
-#name p{
+
+#name p {
   font-size: 1rem;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .gallery img {
+    width: 200px;
+    height: 270px;
+  }
+
+  .ommig img {
+    width: 150px;
+    height: 100px;
+    padding: 0px 10px;
+  }
+
+  #meddelande,
+  .box {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .gallery img {
+    width: 150px;
+    height: 200px;
+  }
+
+  .ommig img {
+    width: 100px;
+    height: 80px;
+    padding: 0px 5px;
+  }
+
+  #meddelande,
+  .box {
+    width: 100%;
+    max-width: none;
+  }
 }
