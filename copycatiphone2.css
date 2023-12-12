@@ -27,15 +27,15 @@
 }
 
 #meddelande {
-  width: 80%; /* Adjusted width for smaller screens */
-  max-width: 400px; /* Added a max-width for larger screens */
+  width: 80%; 
+  max-width: 400px;
   height: 200px;
 }
 
 .box {
   height: 150px;
-  width: 80%; /* Adjusted width for smaller screens */
-  max-width: 300px; /* Added a max-width for larger screens */
+  width: 80%; 
+  max-width: 300px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   margin: 10px;
@@ -57,7 +57,6 @@
   font-size: 1rem;
 }
 
-/* Media Queries for responsiveness */
 @media only screen and (max-width: 768px) {
   .heading {
     font-size: 2.5rem;

@@ -11,7 +11,7 @@ body {
   background-color: #131417;
 }
 
-/* Media Queries for responsiveness */
+
 @media only screen and (max-width: 768px) {
   .containerr {
     font-size: 1.8rem;
@@ -72,7 +72,7 @@ body {
   }
 }
 
-/* Remaining Styles */
+
 p {
   text-shadow: 0 0 7px rgba(0, 0, 0, 0.3), 0 0 3px rgba(255, 255, 255, 0.3);
 }
@@ -119,8 +119,6 @@ p {
 .third div {
   background-color: #c10528;
 }
-
-/* Remaining Styles */
 
 
 @keyframes text-animation {
@@ -246,8 +244,8 @@ html{
 @media only screen and (max-width: 767px) {
   .columns {
     grid-template-columns: auto;
-    padding-left: 10px; /* Adjust as needed */
-    padding-right: 10px; /* Adjust as needed */
+    padding-left: 10px; 
+    padding-right: 10px; 
   }
 }
 
@@ -315,8 +313,8 @@ html{
 @media only screen and (max-width: 767px) {
   .name {
     grid-template-columns: auto;
-    padding-left: 10px; /* Adjust as needed */
-    padding-right: 10px; /* Adjust as needed */
+    padding-left: 10px; 
+    padding-right: 10px;
   }
 }
 
