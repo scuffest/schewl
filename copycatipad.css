@@ -5,8 +5,8 @@
 
 .box {
   height: 200px;
-  width: 80%; /* Adjusted width for smaller screens */
-  max-width: 400px; /* Added a max-width for larger screens */
+  width: 80%;
+  max-width: 400px; 
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   margin: 10px;
@@ -15,7 +15,7 @@
 
 .box h2 {
   font-size: 1.5rem;
-  margin-bottom: 15px; /* Adjusted margin for smaller screens */
+  margin-bottom: 15px; 
 }
 
 .box p {
@@ -23,9 +23,9 @@
 }
 
 .ommig img {
-  padding: 0px 10px; /* Adjusted padding for smaller screens */
-  width: 100%; /* Ensure image width is 100% of the container */
-  height: auto; /* Maintain aspect ratio for responsive images */
+  padding: 0px 10px; 
+  width: 100%; 
+  height: auto;
 }
 
 .name {
@@ -40,7 +40,7 @@
   font-size: 1rem;
 }
 
-/* Media Queries for responsiveness */
+
 @media only screen and (max-width: 768px) {
   .box {
     width: 90%;
