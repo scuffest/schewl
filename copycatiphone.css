@@ -5,8 +5,8 @@
 
 .box {
   height: 200px;
-  width: 80%; /* Adjusted width for smaller screens */
-  max-width: 500px; /* Added a max-width for larger screens */
+  width: 80%; 
+  max-width: 500px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   margin: 10px;
@@ -16,7 +16,7 @@
 .box h2 {
   color: yellowgreen;
   font-size: 2rem;
-  margin-bottom: 20px; /* Adjusted margin for smaller screens */
+  margin-bottom: 20px; 
 }
 
 .box p {
@@ -25,7 +25,7 @@
 }
 
 .name {
-  padding: 20px; /* Adjusted padding for smaller screens */
+  padding: 20px; 
   border: 3px black solid;
   border-radius: 10px;
   background-color: rgba(101, 182, 35, 0.1);
@@ -68,7 +68,7 @@
   left: -10px;
 }
 
-/* Media Queries for responsiveness */
+
 @media only screen and (max-width: 768px) {
   .box {
     width: 90%;
