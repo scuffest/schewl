@@ -372,11 +372,6 @@ html{
   color: white;
   cursor: pointer;
 }
-
-.name-invs{
-  visibility: hidden;
-}
-
 .idpo{
   visibility: hidden;
 }
