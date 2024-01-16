@@ -25,7 +25,7 @@ p{
 
 /*Now some cooler stuff B) */
 
-/* compound selector leter efter exakta selector och man har inga mellanrum*/
+/* compound selector letar efter exakta selector och man har inga mellanrum*/
 p.quote#poe{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
