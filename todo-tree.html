@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do</title>
+    <link rel="stylesheet" href="todo-style.css" />
+  </head>
+  <body>
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Add a new task...">
+      <button type="submit">Add Task</button>
+    </form>
+    <main>
+      <section>
+        <h1 id="new-title">Not started</h1>
+        <ul id="new-tasks">
+          <li>Some really long task with many words</li>
+          <li>Some task</li>
+          <li>Some task</li>
+          <li>Some task</li>
+          <li>Some task</li>
+          <li>Some task</li>
+          <li>Some task</li>
+        </ul>
+      </section>
+      <section>
+        <h1 id="ongoing-title">Ongoing</h1>
+        <ul id="ongoing-tasks">
+          <li>Some task</li>
+          <li>Some task</li>
+          <li>Some task</li>
+          <li>Some task</li>
+          <li>Some task</li>
+          <li>Some task</li>
+          <li>Some task</li>
+        </ul>
+      </section>
+      <section id="completed-tasks">
+        <h1 id="completed-title">Completed</h1>
+        <ul id="ongoing-tasks">
+          <li><i>Här var det tomt</i></li>
+        </ul>
+      </section>
+    </main>
+    <script src="todo-script.js"></script>
+  </body>
+</html>
