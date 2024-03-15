@@ -4,7 +4,7 @@ const todoList = document.getElementById("new-tasks");
 
 function addTask(userInput){
   let listItem = document.createElement("li");
-  let checkBox = document.userInput;
+  let checkBox = document.createElement("input");
   checkBox.setAttribute("type", "checkbox");
   listItem.appendChild(checkBox);
 
