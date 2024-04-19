@@ -1,0 +1,10 @@
+nav{
+  border: solid;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 5% 95%;
+}
