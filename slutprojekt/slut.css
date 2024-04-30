@@ -29,15 +29,21 @@ article {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border-radius: 25px;
   background-color: black;
   margin-left: 10em;
   margin-right: 10em;
   padding: 3em;
 }
 
+article img{
+  width: 100%;
+
+}
+
 h2, h1, p{
+  font-family: VCR;
   color:white
+  
 }
 
 .side-bar{
@@ -45,6 +51,11 @@ h2, h1, p{
 }
 
 .headerforarticle{
-  margin-right: 93%;
+  margin-right:auto;
   font-family: VCR;
+}
+
+h1{
+  font-size: 40px;
+  font-weight: normal;
 }
