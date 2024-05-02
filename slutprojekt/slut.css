@@ -8,6 +8,16 @@
   src: url(VCR_OSD_MONO_1.001.ttf);
 }
 
+@font-face{
+  font-family: RUBIK;
+  src: url(Rubik-Italic-VariableFont_wght.ttf);
+}
+
+@font-face{
+  font-family:RUBIKS;
+  src: url(Rubik-VariableFont_wght.ttf)
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -39,6 +49,7 @@ article {
   margin-right: 10em;
   padding: 3em;
   margin-bottom:10%;
+  
 }
 
 article img{
@@ -46,10 +57,10 @@ article img{
 
 }
 
-h2, h1, p{
+h1, p{
+  margin:1.5%;
   font-family: VCR;
   color:white
-  
 }
 
 .side-bar{
@@ -68,4 +79,8 @@ h1{
 
 h2{
   font-size: 20px;
+  margin:1,5%;
+  font-family:RUBIKS;
+  color: white;
+  font-style:normal;
 }
