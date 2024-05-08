@@ -26,10 +26,6 @@ body{
   background-color: #504949;
 }
 
-#navbartop{
-  padding: 3%;
-  margin-left: 8%;
-}
 
 .side-bar{
  position: sticky;
@@ -47,13 +43,14 @@ article {
   background-color: black;
   padding: 3em;
   margin-bottom:10%;
-  
+  margin-left:5%;
+  margin-right:5%;
 }
 
-h1, p{
+h1{
   margin:1.5%;
   font-family: VCR;
-  color:white
+  color:#E6E6E6;
 }
 
 .side-bar{
@@ -74,21 +71,27 @@ h2{
   font-size: 20px;
   margin:1.5%;
   font-family:RUBIKS;
-  color: white;
+  color: #E6E6E6;
   font-style:normal;
+}
+
+p{
+  font-family: RUBIKS;
+  color:#E6E6E6;
 }
 
 #borderforheader{
   background-color:#121212;
-  padding-left:22%;
-  padding-right:22%
+  padding-left:23%;
+  padding-right:23%
 }
 
 #earlyaccess{
   background-color:#121212;
-  padding-left:38%;
-  padding-right:38%;
-  
+  padding-left:39%;
+  padding-right:39%;
+  font-weight: lighter;
+  color:#E6E6E6;
 }
 
 #container {
@@ -104,4 +107,22 @@ a {
   color:#e81a3f;
   text-decoration: none;
   font-size:110%;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer{
+background-color: black;
+padding: 20px;
+text-align: center;
+left: 0;
+bottom: 0;
+
+}
+.baby{
+  margin-top:4%;
+  margin-left:5%;
+  margin-bottom: 2.5%;
 }
