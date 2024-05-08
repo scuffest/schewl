@@ -84,6 +84,13 @@ h2{
   padding-right:22%
 }
 
+#earlyaccess{
+  background-color:#121212;
+  padding-left:38%;
+  padding-right:38%;
+  
+}
+
 #container {
   display: flex;
   align-items: center;
@@ -91,4 +98,10 @@ h2{
 
 #container p {
   margin-left: 1em;
+}
+
+a {
+  color:#e81a3f;
+  text-decoration: none;
+  font-size:110%;
 }
