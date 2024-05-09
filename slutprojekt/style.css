@@ -26,16 +26,6 @@ body{
   background-color: #504949;
 }
 
-
-.side-bar{
-  display: grid;
-  column-gap: 10px;
-  justify-content: space-between;
-  position: sticky;
-  top:0;
-  padding-bottom: 100vh;
-}
-
 article {
   display: flex;
   flex-direction: column;
@@ -134,18 +124,23 @@ bottom: 0;
   height: auto;
 }
 
+.side-bar{
+  position: sticky;
+  top:0;
+  padding-bottom: 100vh;
+}
+
+
 #homebutton{
+  list-style:none;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom:3em;
   width: 100%;
-  position:absolute;
   transition: 1s;
 }
 
 #homebutton:hover{
   transform:scale(1.1);
-}
-
-#enemylogo{
-  width: 100%;
-  height: auto;
-
 }
