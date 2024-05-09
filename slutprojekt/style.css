@@ -107,9 +107,10 @@ a {
   color:#e81a3f;
   text-decoration: none;
   font-size:110%;
+  transition:color .3s;
 }
 
-a:hover {
+a:hover{
   text-decoration: underline;
 }
 
@@ -133,5 +134,11 @@ bottom: 0;
 }
 
 #homebutton{
-  
+  width: 100%;
+  position:absolute;
+  transition: 1s;
+}
+
+#homebutton:hover{
+  transform:scale(1.1);
 }
