@@ -32,17 +32,12 @@ article {
   justify-content: space-between;
   align-items: center;
   background-color: black;
-  padding: 3em;
+  padding: 1.5em;
   margin-bottom:10%;
   margin-left:5%;
   margin-right:5%;
 }
 
-h1{
-  margin:1.5%;
-  font-family: VCR;
-  color:#E6E6E6;
-}
 
 .side-bar{
   background-color: black ;
@@ -54,7 +49,10 @@ h1{
 }
 
 h1{
-  font-size: 40px;
+  margin:1.5%;
+  font-family: VCR;
+  color:#E6E6E6;
+  font-size: 3vw;
   font-weight: normal;
 }
 
@@ -66,15 +64,31 @@ h2{
   font-style:normal;
 }
 
+h3{
+  color:#E6E6E6;
+  font-size: 15px;
+  font-family:RUBIKS;
+  font-weight: normal;
+  margin-left:1.5%;
+  margin-bottom:1.5%;
+}
+
+li, ul{
+  font-family: VCR;
+  color:#E6E6E6;
+
+}
+
 p{
   font-family: RUBIKS;
   color:#E6E6E6;
+  margin:1.5%;
 }
 
 #borderforheader{
   background-color:#121212;
-  padding-left:23%;
-  padding-right:23%
+  padding-left:21%;
+  padding-right:21%
 }
 
 #earlyaccess{
@@ -125,22 +139,48 @@ bottom: 0;
 }
 
 .side-bar{
-  position: sticky;
+  position: fixed;
   top:0;
+  left:0;
+  height: 100%;
+  width: 5em;
   padding-bottom: 100vh;
 }
 
 
 #homebutton{
-  list-style:none;
   display:flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom:3em;
+  margin-bottom:5em;
   width: 100%;
   transition: 1s;
 }
 
 #homebutton:hover{
   transform:scale(1.1);
+}
+
+#enemiesarticle{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
+  background-color: black;
+  padding: 1.5em;
+}
+
+.page-content{
+  margin-right:auto;
+}
+
+.listsareannoying{
+  font-family: RUBIKS;
+  margin-right:10%
+
+}
+
+.tbody{
+  color:#E6E6E6;
+  background-color: #E6E6E6;
 }
