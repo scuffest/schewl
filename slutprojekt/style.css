@@ -1,10 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
 html {
-  color:#E6E6E6;
+  color: #E6E6E6;
 }
 
 @font-face {
@@ -12,18 +12,17 @@ html {
   src: url(VCR_OSD_MONO_1.001.ttf);
 }
 
-@font-face{
+@font-face {
   font-family: RUBIK;
   src: url(Rubik-Italic-VariableFont_wght.ttf);
 }
 
-@font-face{
-  font-family:RUBIKS;
+@font-face {
+  font-family: RUBIKS;
   src: url(Rubik-VariableFont_wght.ttf)
 }
 
-
-body{
+body {
   margin: 0;
   padding: 0;
   display: grid;
@@ -38,76 +37,71 @@ article {
   align-items: center;
   background-color: black;
   padding: 1.5em;
-  margin-bottom:10%;
-  margin-left:5%;
-  margin-right:5%;
+  margin-bottom: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-
-.side-bar{
-  background-color: black ;
+.side-bar {
+  background-color: black;
 }
 
-.headerforarticle{
-  margin-right:auto;
+.headerforarticle {
+  margin-right: auto;
   font-family: VCR;
 }
 
-h1{
-  margin:1.5%;
+h1 {
+  margin: 1.5%;
   font-family: VCR;
   font-size: 3vw;
   font-weight: normal;
 }
 
-h2{
+h2 {
   font-size: 20px;
-  margin:1.5%;
-  font-family:RUBIKS;
+  margin: 1.5%;
+  font-family: RUBIKS;
   color: #E6E6E6;
-  font-style:normal;
+  font-style: normal;
 }
 
-h3{
+h3 {
   font-size: 15px;
-  font-family:RUBIKS;
+  font-family: RUBIKS;
   font-weight: normal;
-  margin-left:1.5%;
-  margin-bottom:1.5%;
+  margin-left: 1.5%;
+  margin-bottom: 1.5%;
 }
 
-.unlisted{
+.unlisted {
   margin-right: auto;
-  margin-left:3%;
+  margin-left: 3%;
 }
 
-li, ul{
+li, ul {
   font-family: RUBIKS;
 }
 
-.listforenemies{
+.listforenemies {
   list-style-position: outside;
-  margin-left:10%;
-  
+  margin-left: 10%;
 }
 
-p{
+p {
   font-family: RUBIKS;
-  margin:1.5%;
+  margin: 1.5%;
 }
 
-#borderforheader{
-  background-color:#121212;
-  padding-left:21%;
-  padding-right:21%
+#borderforheader {
+  background-color: #121212;
+  padding-left: 21%;
+  padding-right: 21%;
 }
 
-#earlyaccess{
-
-  padding-left:39%;
-  padding-right:39%;
-
-  
+#earlyaccess {
+  padding-left: 39%;
+  padding-right: 39%;
 }
 
 #container {
@@ -120,30 +114,29 @@ p{
 }
 
 a {
-  color:#e81a3f;
+  color: #e81a3f;
   text-decoration: none;
-  font-size:110%;
-  transition:color .3s;
+  font-size: 110%;
+  transition: color .3s;
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 
-footer{
+footer {
   background-color: black;
   padding: 1%;
   text-align: center;
-  
 }
 
 .baby {
-  margin-top:4%;
-  margin-left:5%;
+  margin-top: 4%;
+  margin-left: 5%;
   margin-bottom: 2.5%;
 }
 
-.plsberesponsive{
+.plsberesponsive {
   width: 100%;
   height: auto;
 }
@@ -166,75 +159,86 @@ footer{
   margin-bottom: 2em;
 }
 
-  
-
-#homebutton{
-  display:flex;
+#homebutton {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom:5em;
+  margin-bottom: 5em;
   width: 100%;
   transition: 1s;
 }
 
-#homebutton:hover{
-  transform:scale(1.1);
+#homebutton:hover {
+  transform: scale(1.1);
 }
 
-#enemiesarticle{
+#enemiesarticle {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   background-color: black;
   padding: 1.5em;
 }
 
-.page-content{
-  margin-right:auto;
+.page-content {
+  margin-right: auto;
 }
-
-
 
 table {
   border-spacing: 0;
-  
   width: 100%;
 }
 
-.spanforlevels{
+.spanforlevels {
   font-family: VCR;
 }
 
-span{
-  color:#e81a3f;
+span {
+  color: #e81a3f;
   font-family: RUBIKS;
-  font-weight:normal;
+  font-weight: normal;
 }
 
-th, td{
+th, td {
   border: 1px solid #2C2C2C;
   background-color: #161616;
-  padding:10px;
+  padding: 10px;
   font-family: RUBIKS;
 }
 
 .earlyaccess-husk {
-  background-color:#121212;
+  background-color: #121212;
   font-weight: lighter;
   padding: 0.25rem 45%;
   margin: 1.5rem auto;
   width: 11%;
 }
 
-.levelsborders{
+.levelsborders {
   font-family: VCR;
-  background-color:#121212;
+  background-color: #121212;
   font-weight: lighter;
   padding: 0.25rem 45%;
   margin: 1.5rem auto;
 }
 
-.listareannoying{
-  padding-right:20%;
+.listareannoying {
+  padding-right: 20%;
+}
+
+/* Progress Bar Styles */
+#progress-bar-container {
+  width: 100%;
+  background-color: #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#progress-bar {
+  width: 0;
+  height: 5px;
+  background-color: #e81a3f;
 }
