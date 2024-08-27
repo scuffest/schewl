@@ -1,0 +1,72 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Här skriver du design för mobil */
+section{
+  background-color: aqua;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#sec1{
+  grid-area: ti ;
+}
+#sec2{
+  grid-area: st;
+}
+#sec3{
+  grid-area: bo;
+}
+#sec4, img{
+  grid-area: sc;
+  width: 100%;
+  height:60%;
+}
+#sec5{
+  grid-area: con;
+}
+
+#gridWrapper{
+  display: grid;
+  width: 100%;
+  min-height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 75px 1fr 75px 75px;
+
+  grid-template-areas: "ti" 
+                      "st" 
+                      "bo" 
+                      "sc" 
+                      "con";
+}
+
+
+@media only screen and (min-width: 600px) {
+  /* Här skriver du design för tablet */
+
+  #gridWrapper{
+      grid-template-columns: 30% 70%;
+      grid-template-rows:75px 50px 1fr 75px;
+      grid-template-areas: "ti st" 
+                          "sc st" 
+                          "bo bo" 
+                          "con con";
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  /* Här skriver du design för desktop */
+
+  #gridWrapper{
+      grid-template-columns: 20% 80%;
+      grid-template-rows:100px 1fr 100px;
+      grid-template-areas: "ti bo"  
+                          ". bo" 
+                          "sc con";
+  }
+  #sec2{
+      display: none;
+  }
+}

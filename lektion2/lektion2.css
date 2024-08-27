@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Här skriver du design för mobil */
+
+section{
+  width: 100%;
+  height: 30vh;
+}
+
+#sec1{
+  background-color: blue;
+}
+
+#sec2{
+  background-color: red;
+}
+
+#sec3{
+  background-color: green;
+}
+
+img{
+  width: 100%;
+  height: 30vh;
+}
+
+@media only screen and (min-width: 600px) {
+  /* Här skriver du design för tablet */
+  #sec1{
+    width: 50%;
+    height: 50vh;
+    background-color: yellow;
+  }
+  #sec2{
+    width: 75%;
+    height: 75vh;
+    background-color:cornflowerblue;
+  }
+  #sec3{
+    width: 50%;
+    height:50vh;
+    background-color: black;
+  }
+  img{
+    width: 50%;
+    height: 50vh;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  /* Här skriver du design för desktop */
+  #sec1{
+    width: 25%;
+    height: 25vh;
+    background-color: beige;
+  }
+  #sec2{
+    width:25%;
+    height: 25vh;
+    background-color: brown;
+  }
+  #sec3{
+    width: 25%;
+    height: 25vh;
+    background-color: beige;
+  }
+  img{
+    width: 25%;
+    height: 25vh;
+  }
+}
