@@ -11,6 +11,7 @@
   --white: white;
   --mainfont:Arial, Helvetica, sans-serif;
   --maincolor: #800000;
+  --maintextcolor:#EAE4D6;
 }
 
 body {
@@ -49,7 +50,7 @@ body {
 
   #websitelogo{
     height:auto;
-    width: 10%;
+    width: 6.5%;
     margin-left:5%;
   }
 
@@ -69,8 +70,8 @@ body {
     display: flex;
     justify-content: center;
     order: 2;
-    width: 40%;
-    margin: 1rem 0;
+    min-width: 40%;
+  
   }
 
   /* Search bar */
@@ -81,7 +82,7 @@ body {
     padding: 0.8rem;
     border: none;
     border-radius: 0.5rem;
-    background-color: #ddd;
+    background-color: var(--maintextcolor);
     font-size: 1rem;
   }
 
@@ -94,7 +95,7 @@ body {
   }
 
   .navbar-icons div {
-    margin-left: 1.5rem;
+    margin-left: 1rem;
     color: var(--white);
     text-align: center;
     cursor: pointer;
@@ -104,46 +105,42 @@ body {
     opacity: 0.8;
   }
 
-  .icon-circle {
-    display: inline-block;
-    width: 5rem;
-    height: 3rem;
+  #language-btn {
     background-color: var(--black);
-    border-radius: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--white);
-    font-size: 0.8rem;
-    font-weight: bold;
+    color: var(--maintextcolor);
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    margin-left: 1.5rem;
+    
   }
 
-  .icon-circle2 {
+  #icon-circle2 {
     display: inline-block;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     background-color: var(--black);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--white);
+    color: var(--maintextcolor);
     font-size: 0.8rem;
   }
 
 
   /* Sign-in button */
-  .sign-in-btn {
+  #sign-in-btn {
     background-color: var(--black);
-    color: var(--white);
+    color: var(--maintextcolor);
     padding: 0.8rem 1.5rem;
     border-radius: 0.5rem;
     font-size: 0.9rem;
     margin-left: 1.5rem;
   }
 
-  .sign-in-btn:hover {
-    background-color: #333;
+  #sign-in-btn:hover {
+    background-color:#333;
   }
 }
 
