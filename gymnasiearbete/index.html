@@ -3,37 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Salsa games</title>
+  <title>Salsa Games</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-  <img src="black-myth-wukong-3840x2160-25790.jpg" alt="Popular Game Picture" id="popular-game-picture">
-  <div id="search-bar">
-    <input type="text" placeholder="Search bar">
-  </div>
+  <!--För Mobilen vet ej vart det ska vara-->
+  <section>
+    <img src="black-myth-wukong-3840x2160-25790.jpg" alt="Popular Game Picture" id="popular-game-picture">
+  </section>
+
+  <section id="search-bar">
+    <form role="search">
+      <label for="main-search-input" class="visually-hidden">Search bar</label>
+      <input type="text" id="main-search-input" placeholder="Search bar" aria-label="Main search bar">
+    </form>
+  </section>
 
 
-<!-- Navbar container -->
-<div class="navbar">
-  <img src="bettersalsa.png" alt="Website Logo" id="websitelogo">
-  
-  <div class="search-container">
-      <input type="text" placeholder="Search bar">
-  </div>
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <img src="bettersalsa.png" alt="Salsa Games Logo" id="websitelogo">
+      
+      <form class="search-container" role="search">
+        <input type="text" placeholder="Search..." aria-label="Search">
+        <button id="search">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+      
 
+      <div class="navbar-icons">
+        
+        <button id="language-btn" aria-label="Language selector">EN/SEK</button>
 
-  <div class="navbar-icons">
-      <!-- Language icon -->
-      <div id="language-btn">EN/SEK</div>
+        <button id="sign-in-btn" aria-label="Sign in">SIGN IN</button>
 
-      <!-- Sign-in button -->
-      <div id="sign-in-btn">SIGN IN</div>
+        <button id="icon-circle2" aria-label="Shopping cart">Cart</button>
+      </div>
+    </nav>
+  </header>
 
-      <!-- Cart icon -->
-      <div id="icon-circle2">Cart</div>
-  </div>
-</div>
+  <main>
+
+  </main>
+
+  <footer>
+  </footer>
 </body>
 </html>
