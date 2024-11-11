@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salsa Games</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <img src="myth.jpg" alt="Popular Game Picture" id="popular-game-picture">
+    
+    <header>
+        <nav>
+            <section class="navbar">
+                <div class="search-wrapper">
+                    <form class="search-container" role="search">
+                        <input type="text" placeholder="Search bar" aria-label="Search">
+                        <button id="search">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="icon-container">
+                    <a href="#" aria-label="Cart">
+                        <img src="cart.png" alt="Cart Icon" class="icon">
+                    </a>
+                    <a href="#" aria-label="Language">
+                        <img src="globe.png" alt="Language Icon" class="icon">
+                    </a>
+                </div>
+            </section>
+        </nav>
+    </header>
+    
+    <section class="slideshow-container" aria-label="Video Game Image Slideshow">
+        <div class="slide fade">
+            <img src="myth.jpg" alt="Black Myth Wukong Game">
+        </div>
+        <div class="slide fade">
+            <img src="warhammer.jpeg" alt="Warhammer Spacemarine 2 Game">
+        </div>
+        <div class="slide fade">
+            <img src="cod.jpeg" alt="Call of Duty Black Ops 6 Game">
+        </div>
+
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
