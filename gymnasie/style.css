@@ -23,19 +23,17 @@ body {
 
 .navbar,
 .slideshow-container,
-.button-bar {
+.button-bar,
+#section-game-card1,
+#section-game-card2,
+#section-game-card3,
+#section-game-card4,
+#section-game-card5,
+#section-platform,
+.site-footer {
   display: none;
 }
 
-#search-bar {
-  display: flex;
-  justify-content: center;
-  margin-top: 5%;
-}
-
-#search-bar input[type="text"] {
-  font-size: 1.5rem;
-}
 
 @media only screen and (min-width: 600px) {
   .prev,
@@ -310,4 +308,107 @@ body {
     transform: scale(1.05);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   }
+
+
+  .giftcards {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .giftcards h2 {
+    font-size: 1.5rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+  }
+  
+  .giftcard-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .giftcard-button {
+    background-color: var(--black);
+    color:var(--white);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .giftcard-button:hover {
+    background-color: var(--gray); 
+  }
+  
+  .site-footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+
+  .footer-info {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  
+  .footer-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-info p {
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 1rem;
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 1rem;
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+  
+  .footer-social a {
+    color: var(--white);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-social a:hover {
+    color: #1e90ff;
+  }
+  
 }
