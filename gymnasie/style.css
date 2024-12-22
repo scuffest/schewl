@@ -5,12 +5,12 @@
   font-family: var(--mainfont);
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-a{
-  color:var(--white);
+a {
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -30,7 +30,7 @@ body {
   max-width: 100%;
 }
 
-#mobile-only{
+#mobile-only {
   display: block;
 }
 
@@ -89,7 +89,8 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.fade, .mobile-fade {
+.fade,
+.mobile-fade {
   animation: fade 1.5s ease;
 }
 
@@ -221,7 +222,7 @@ body {
   overflow: hidden;
 }
 
-.section-title {
+#section-title {
   margin-left: 1rem;
   margin-bottom: 10px;
   font-size: 1rem;
@@ -264,15 +265,16 @@ body {
 .nav-btn {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 22%;
+  transform: translateY(-50%);
   width: auto;
-  margin-top: -22px;
   padding: 10px;
   color: var(--white);
   font-weight: bold;
   font-size: 1.5rem;
   transition: background-color 0.3s ease;
   border: none;
+  z-index: 10;
 }
 
 .prev-btn {
@@ -284,7 +286,6 @@ body {
   right: 10px;
   background-color: rgba(0, 0, 0, 0.1);
 }
-
 
 .slide-dots {
   text-align: center;
@@ -305,14 +306,148 @@ body {
   background-color: var(--black);
 }
 
+.game-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.large-game {
+  position: relative;
+}
+
+.small-games {
+  display: flex;
+  gap: 1rem;
+}
+
+.small-game {
+  position: relative;
+  flex: 1;
+}
+
+.mobile-game-image {
+  width: 100%;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.price-tag {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: black;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.game-box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.image-phone-game {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  background: #ccc;
+}
+
+.game-price {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.titles {
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+.mobile-footer {
+  background-color: var(--black);
+  color:var(--white);
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.footer-link {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.social-link {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.social-link:hover {
+  color: #00aced;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: #bbb;
+}
+
 @media only screen and (min-width: 600px) {
-  .prev,.next {
+  .prev,
+  .next {
     font-size: 1.125rem;
   }
 }
 
 @media only screen and (min-width: 769px) {
-  #mobile-only{
+  #mobile-only {
     display: none;
   }
 
@@ -328,7 +463,6 @@ body {
   .site-footer {
     display: block;
   }
-
 
   .navbar {
     list-style-type: none;
@@ -541,11 +675,10 @@ body {
     font-weight: bold;
     display: none; /* Hidden until hover */
   }
-  
+
   .product-card:hover .discount-info {
     display: block;
   }
-  
 
   .platform-section {
     text-align: center;
