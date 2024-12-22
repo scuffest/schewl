@@ -5,250 +5,381 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Salsa Games</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
-    <!--IMG SRC for mobile-->
-    <img src="./pictures/myth.jpg" alt="Popular Game Picture" id="popular-game-picture" />
+    <!--Mobile-->
+    <section id="mobile-only">
+      <section
+        class="mobile-slideshow-container"
+        aria-label="Mobile Image Slideshow"
+      >
+        <article class="mobile-slide mobile-fade">
+          <img src="./pictures/myth.jpg" alt="Black Myth Wukong Game" />
+        </article>
+        <article class="mobile-slide mobile-fade">
+          <img
+            src="./pictures/warhammer.jpeg"
+            alt="Warhammer Spacemarine 2 Game"
+          />
+        </article>
+        <article class="mobile-slide mobile-fade">
+          <img src="./pictures/cod.jpeg" alt="Call of Duty Black Ops 6 Game" />
+        </article>
 
-    <header>
-      <nav>
-        <section class="navbar">
-          <div class="search-wrapper">
-            <form class="search-container" role="search">
-              <input type="text" placeholder="Search bar" aria-label="Search" />
-              <button id="search">
-                <i class="fa fa-search"></i>
-              </button>
-            </form>
+        <nav>
+          <a
+            class="mobile-prev"
+            onclick="changeMobileSlide(-1)"
+            aria-label="Previous Slide"
+            >&#10094;</a
+          >
+          <a
+            class="mobile-next"
+            onclick="changeMobileSlide(1)"
+            aria-label="Next Slide"
+            >&#10095;</a
+          >
+        </nav>
+      </section>
+
+      <section class="mobile-search-bar-container">
+        <form class="mobile-search-form" role="search" aria-label="Search">
+          <input
+            type="text"
+            class="mobile-search-input"
+            placeholder="Search here..."
+            aria-label="Search input"
+          />
+          <button
+            type="submit"
+            class="mobile-search-button"
+            aria-label="Submit search"
+          >
+            Search
+          </button>
+        </form>
+      </section>
+
+      <section class="mobile-categories-container" aria-label="Categories">
+        <h2 class="mobile-categories-title">Categories</h2>
+        <div class="mobile-categories-grid">
+          <button class="mobile-category-item" aria-label="Bestsellers">
+            Bestsellers
+          </button>
+          <button class="mobile-category-item" aria-label="Platform">
+            Platform
+          </button>
+          <button class="mobile-category-item" aria-label="Deals">Deals</button>
+          <button class="mobile-category-item" aria-label="Upcoming">
+            Upcoming
+          </button>
+          <button class="mobile-category-item" aria-label="Deals">Deals</button>
+          <button class="mobile-category-item" aria-label="Giftcards">
+            Giftcards
+          </button>
+        </div>
+      </section>
+
+      <section class="game-slideshow">
+        <h2 class="section-title">Best Seller</h2>
+        <div class="slides-container">
+          <div class="game-slide">
+            <img src="./pictures/hollow.jpg" alt="Game 1" class="game-image" />
+            <div class="hover-price">
+              <span>$19.99</span>
+            </div>
           </div>
-          <div class="icon-container">
-            <a href="#" aria-label="Cart">
-              <img src="./pictures/cart.png" alt="Cart Icon" class="icon" />
-            </a>
-            <a href="#" aria-label="Language">
-              <img
-                src="./pictures/globe.png"
-                alt="Language Icon"
-                class="icon"
-              />
-            </a>
+
+          <div class="game-slide">
+            <img src="./pictures/cod.jpeg" alt="Game 2" class="game-image" />
+            <div class="hover-price">
+              <span>$29.99</span>
+            </div>
+          </div>
+
+          <div class="game-slide">
+            <img src="./pictures/myth.jpg" alt="Game 3" class="game-image" />
+            <div class="hover-price">
+              <span>$39.99</span>
+            </div>
+          </div>
+        </div>
+
+        <button class="nav-btn prev-btn" onclick="changeGameSlide(-1)">
+          &#10094;
+        </button>
+        <button class="nav-btn next-btn" onclick="changeGameSlide(1)">
+          &#10095;
+        </button>
+
+        <div class="slide-dots">
+          <span class="dot" onclick="currentGameSlide(0)"></span>
+          <span class="dot" onclick="currentGameSlide(1)"></span>
+          <span class="dot" onclick="currentGameSlide(2)"></span>
+        </div>
+      </section>
+
+      
+    </section>
+
+    <!--Desktop-->
+    <section id="desktop-only">
+      <header class="desktop">
+        <nav>
+          <section class="navbar">
+            <div class="search-wrapper">
+              <form class="search-container" role="search">
+                <input
+                  type="text"
+                  placeholder="Search bar"
+                  aria-label="Search"
+                />
+                <button id="search">
+                  <i class="fa fa-search"></i>
+                </button>
+              </form>
+            </div>
+            <div class="icon-container">
+              <a href="#" aria-label="Cart">
+                <img src="./pictures/cart.png" alt="Cart Icon" class="icon" />
+                <p>Cart</p>
+              </a>
+              <a href="#" aria-label="Language">
+                <img
+                  src="./pictures/globe.png"
+                  alt="Language Icon"
+                  class="icon"
+                />
+                <p>Sv / Eng</p>
+              </a>
+            </div>
+          </section>
+        </nav>
+      </header>
+
+      <section
+        class="slideshow-container"
+        aria-label="Video Game Image Slideshow"
+      >
+        <div class="slide fade">
+          <img src="./pictures/myth.jpg" alt="Black Myth Wukong Game" />
+        </div>
+        <div class="slide fade">
+          <img
+            src="./pictures/warhammer.jpeg"
+            alt="Warhammer Spacemarine 2 Game"
+          />
+        </div>
+        <div class="slide fade">
+          <img src="./pictures/cod.jpeg" alt="Call of Duty Black Ops 6 Game" />
+        </div>
+
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+      </section>
+
+      <section class="button-bar">
+        <a href="#section-game-card1" class="button-item">Bestsellers</a>
+        <a href="#section-platform" class="button-item">Platform</a>
+        <a href="#section-game-card2" class="button-item">Deals</a>
+        <a href="#section-game-card3" class="button-item">Upcoming</a>
+        <a href="#section-game-card4" class="button-item">DLC</a>
+        <a href="#section-game-card5" class="button-item">Giftcards</a>
+      </section>
+
+      <div id="section-game-card1">
+        <section class="game-card">
+          <h2>BEST SELLER</h2>
+          <div class="product-grid">
+            <article class="product-card">
+              <img src="./pictures/ult.webp" alt="ULTRAKILL" />
+              <div class="hover-info">
+                <p>ULTRAKILL</p>
+                <p>$19.99</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="./pictures/cod.jpeg" alt="Call of Duty Black Ops 6" />
+              <div class="hover-info">
+                <p>Call of Duty Black Ops 6</p>
+                <p>$59.99</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="./pictures/eld.jpg" alt="Elden Ring" />
+              <div class="hover-info">
+                <p>Elden Ring</p>
+                <p>$49.99</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="./pictures/hollow.jpg" alt="Hollow Knight" />
+              <div class="hover-info">
+                <p>Hollow Knight</p>
+                <p>$14.99</p>
+              </div>
+            </article>
           </div>
         </section>
-      </nav>
-    </header>
-
-    <section
-      class="slideshow-container"
-      aria-label="Video Game Image Slideshow"
-    >
-      <div class="slide fade">
-        <img src="./pictures/myth.jpg" alt="Black Myth Wukong Game" />
-      </div>
-      <div class="slide fade">
-        <img
-          src="./pictures/warhammer.jpeg"
-          alt="Warhammer Spacemarine 2 Game"
-        />
-      </div>
-      <div class="slide fade">
-        <img src="./pictures/cod.jpeg" alt="Call of Duty Black Ops 6 Game" />
       </div>
 
-      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+      <div id="section-platform">
+        <section aria-label="Platform Categories" class="platform-section">
+          <h2>PLATFORM</h2>
+          <div class="platform-grid">
+            <article class="platform-card">
+              <div class="platform-content">
+                <img src="./pictures/ps5.png" alt="PlayStation" />
+                <p>PlayStation</p>
+              </div>
+            </article>
+            <article class="platform-card">
+              <div class="platform-content">
+                <img src="./pictures/pc.webp" alt="PC" />
+                <p>PC</p>
+              </div>
+            </article>
+            <article class="platform-card">
+              <div class="platform-content">
+                <img src="./pictures/xbox.png" alt="Xbox" />
+                <p>Xbox</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <div id="section-game-card2">
+        <section class="game-card">
+          <h2>DEALS</h2>
+          <div class="product-grid">
+            <article class="product-card" data-original-price="29.99">
+              <img src="./pictures/ult.webp" alt="ULTRAKILL" />
+              <div class="hover-info">
+                <p>ULTRAKILL</p>
+                <p class="current-price">$19.99</p>
+                <p class="discount-info"></p>
+              </div>
+            </article>
+            <article class="product-card" data-original-price="79.99">
+              <img src="./pictures/cod.jpeg" alt="Call of Duty Black Ops 6" />
+              <div class="hover-info">
+                <p>Call of Duty Black Ops 6</p>
+                <p class="current-price">$59.99</p>
+                <p class="discount-info"></p>
+              </div>
+            </article>
+            <article class="product-card" data-original-price="59.99">
+              <img src="./pictures/eld.jpg" alt="Elden Ring" />
+              <div class="hover-info">
+                <p>Elden Ring</p>
+                <p class="current-price">$49.99</p>
+                <p class="discount-info"></p>
+              </div>
+            </article>
+            <article class="product-card" data-original-price="19.99">
+              <img src="./pictures/hollow.jpg" alt="Hollow Knight" />
+              <div class="hover-info">
+                <p>Hollow Knight</p>
+                <p class="current-price">$14.99</p>
+                <p class="discount-info"></p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <div id="section-game-card3">
+        <section class="game-card">
+          <h2>UPCOMING GAMES</h2>
+          <div class="product-grid">
+            <article class="product-card">
+              <img src="./pictures/ult.webp" alt="ULTRAKILL" />
+              <div class="hover-info">
+                <p>ULTRAKILL</p>
+                <p>$19.99</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="./pictures/cod.jpeg" alt="Call of Duty Black Ops 6" />
+              <div class="hover-info">
+                <p>Call of Duty Black Ops 6</p>
+                <p>$59.99</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="./pictures/eld.jpg" alt="Elden Ring" />
+              <div class="hover-info">
+                <p>Elden Ring</p>
+                <p>$49.99</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="./pictures/hollow.jpg" alt="Hollow Knight" />
+              <div class="hover-info">
+                <p>Hollow Knight</p>
+                <p>$14.99</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <div id="section-game-card4">
+        <section class="game-card">
+          <h2>DLC</h2>
+          <div class="product-grid">
+            <article class="product-card">
+              <img src="./pictures/ult.webp" alt="ULTRAKILL" />
+              <div class="hover-info">
+                <p>ULTRAKILL</p>
+                <p>$19.99</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="./pictures/cod.jpeg" alt="Call of Duty Black Ops 6" />
+              <div class="hover-info">
+                <p>Call of Duty Black Ops 6</p>
+                <p>$59.99</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="./pictures/eld.jpg" alt="Elden Ring" />
+              <div class="hover-info">
+                <p>Elden Ring</p>
+                <p>$49.99</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <img src="./pictures/hollow.jpg" alt="Hollow Knight" />
+              <div class="hover-info">
+                <p>Hollow Knight</p>
+                <p>$14.99</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <div id="section-game-card5">
+        <section class="giftcards">
+          <h2>GIFTCARDS</h2>
+          <div class="giftcard-buttons">
+            <button class="giftcard-button">XBOX</button>
+            <button class="giftcard-button">PS</button>
+            <button class="giftcard-button">STEAM</button>
+          </div>
+        </section>
+      </div>
     </section>
-
-    <section class="button-bar">
-      <a href="#section-game-card1" class="button-item">Bestsellers / Hot</a>
-      <a href="#section-platform" class="button-item">Platform</a>
-      <a href="#section-game-card2" class="button-item">Deals</a>
-      <a href="#section-game-card3" class="button-item">Upcoming</a>
-      <a href="#section-game-card4" class="button-item">DLC</a>
-      <a href="#section-game-card5" class="button-item">Giftcards</a>
-    </section>
-
-    <div id="section-game-card1">
-      <section class="game-card">
-        <h2>BEST SELLER / HOT</h2>
-        <div class="product-grid">
-          <article class="product-card">
-            <img src="./pictures/ult.webp" alt="ULTRAKILL" />
-            <div class="hover-info">
-              <p>ULTRAKILL</p>
-              <p>$19.99</p>
-            </div>
-          </article>
-          <article class="product-card">
-            <img src="./pictures/cod.jpeg" alt="Call of Duty Black Ops 6" />
-            <div class="hover-info">
-              <p>Call of Duty Black Ops 6</p>
-              <p>$59.99</p>
-            </div>
-          </article>
-          <article class="product-card">
-            <img src="./pictures/eld.jpg" alt="Elden Ring" />
-            <div class="hover-info">
-              <p>Elden Ring</p>
-              <p>$49.99</p>
-            </div>
-          </article>
-          <article class="product-card">
-            <img src="./pictures/hollow.jpg" alt="Hollow Knight" />
-            <div class="hover-info">
-              <p>Hollow Knight</p>
-              <p>$14.99</p>
-            </div>
-          </article>
-        </div>
-      </section>
-    </div>
-
-    <div id="section-platform">
-      <section aria-label="Platform Categories" class="platform-section">
-        <h2>PLATFORM</h2>
-        <div class="platform-grid">
-          <article class="platform-card">
-            <div class="platform-content">
-              <img src="./pictures/ps5.png" alt="PlayStation" />
-              <p>PlayStation</p>
-            </div>
-          </article>
-          <article class="platform-card">
-            <div class="platform-content">
-              <img src="./pictures/pc.webp" alt="PC" />
-              <p>PC</p>
-            </div>
-          </article>
-          <article class="platform-card">
-            <div class="platform-content">
-              <img src="./pictures/xbox.png" alt="Xbox" />
-              <p>Xbox</p>
-            </div>
-          </article>
-        </div>
-      </section>
-    </div>
-
-    <div id="section-game-card2">
-      <section class="game-card">
-        <h2>DEALS</h2>
-        <div class="product-grid">
-          <article class="product-card">
-            <img src="./pictures/ult.webp" alt="ULTRAKILL" />
-            <div class="hover-info">
-              <p>ULTRAKILL</p>
-              <p>$19.99</p>
-            </div>
-          </article>
-          <article class="product-card">
-            <img src="./pictures/cod.jpeg" alt="Call of Duty Black Ops 6" />
-            <div class="hover-info">
-              <p>Call of Duty Black Ops 6</p>
-              <p>$59.99</p>
-            </div>
-          </article>
-          <article class="product-card">
-            <img src="./pictures/eld.jpg" alt="Elden Ring" />
-            <div class="hover-info">
-              <p>Elden Ring</p>
-              <p>$49.99</p>
-            </div>
-          </article>
-          <article class="product-card">
-            <img src="./pictures/hollow.jpg" alt="Hollow Knight" />
-            <div class="hover-info">
-              <p>Hollow Knight</p>
-              <p>$14.99</p>
-            </div>
-          </article>
-        </div>
-      </section>
-    </div>
-
-    <div id="section-game-card3">
-      <section class="game-card">
-        <h2>UPCOMING GAMES</h2>
-        <div class="product-grid">
-          <article class="product-card">
-            <img src="./pictures/ult.webp" alt="ULTRAKILL" />
-            <div class="hover-info">
-              <p>ULTRAKILL</p>
-              <p>$19.99</p>
-            </div>
-          </article>
-          <article class="product-card">
-            <img src="./pictures/cod.jpeg" alt="Call of Duty Black Ops 6" />
-            <div class="hover-info">
-              <p>Call of Duty Black Ops 6</p>
-              <p>$59.99</p>
-            </div>
-          </article>
-          <article class="product-card">
-            <img src="./pictures/eld.jpg" alt="Elden Ring" />
-            <div class="hover-info">
-              <p>Elden Ring</p>
-              <p>$49.99</p>
-            </div>
-          </article>
-          <article class="product-card">
-            <img src="./pictures/hollow.jpg" alt="Hollow Knight" />
-            <div class="hover-info">
-              <p>Hollow Knight</p>
-              <p>$14.99</p>
-            </div>
-          </article>
-        </div>
-      </section>
-    </div>
-
-    <div id="section-game-card4">
-      <section class="game-card">
-        <h2>DLC</h2>
-        <div class="product-grid">
-          <article class="product-card">
-            <img src="./pictures/ult.webp" alt="ULTRAKILL" />
-            <div class="hover-info">
-              <p>ULTRAKILL</p>
-              <p>$19.99</p>
-            </div>
-          </article>
-          <article class="product-card">
-            <img src="./pictures/cod.jpeg" alt="Call of Duty Black Ops 6" />
-            <div class="hover-info">
-              <p>Call of Duty Black Ops 6</p>
-              <p>$59.99</p>
-            </div>
-          </article>
-          <article class="product-card">
-            <img src="./pictures/eld.jpg" alt="Elden Ring" />
-            <div class="hover-info">
-              <p>Elden Ring</p>
-              <p>$49.99</p>
-            </div>
-          </article>
-          <article class="product-card">
-            <img src="./pictures/hollow.jpg" alt="Hollow Knight" />
-            <div class="hover-info">
-              <p>Hollow Knight</p>
-              <p>$14.99</p>
-            </div>
-          </article>
-        </div>
-      </section>
-    </div>
-
-    <div id="section-game-card5">
-      <section class="giftcards">
-        <h2>GIFTCARDS</h2>
-        <div class="giftcard-buttons">
-          <button class="giftcard-button">XBOX</button>
-          <button class="giftcard-button">PS</button>
-          <button class="giftcard-button">STEAM</button>
-        </div>
-      </section>
-    </div>
 
     <footer class="site-footer">
       <div class="footer-container">
@@ -256,14 +387,14 @@
           <h3>Salsa Games</h3>
           <p>&copy; 2024 Salsa Games. All rights reserved.</p>
         </section>
-    
+
         <nav class="footer-links" aria-label="Footer Navigation">
           <a href="#about">About Us</a>
           <a href="#contact">Contact</a>
           <a href="#terms">Terms of Service</a>
           <a href="#privacy">Privacy Policy</a>
         </nav>
-    
+
         <aside class="footer-social">
           <a href="https://facebook.com" target="_blank" aria-label="Facebook">
             <i class="fab fa-facebook-f"></i>
@@ -271,14 +402,17 @@
           <a href="https://twitter.com" target="_blank" aria-label="Twitter">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            aria-label="Instagram"
+          >
             <i class="fab fa-instagram"></i>
           </a>
         </aside>
       </div>
     </footer>
-       
-  
+
     <script src="script.js"></script>
   </body>
 </html>
