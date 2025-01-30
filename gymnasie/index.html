@@ -219,41 +219,68 @@
       </section>
 
       <section class="button-bar">
+        <a href="#section-game-card5" class="button-item">Giftcards</a>
         <a href="#section-game-card1" class="button-item">Bestsellers</a>
         <a href="#section-platform" class="button-item">Platform</a>
         <a href="#section-game-card2" class="button-item">Deals</a>
         <a href="#section-game-card3" class="button-item">Upcoming</a>
         <a href="#section-game-card4" class="button-item">DLC</a>
-        <a href="#section-game-card5" class="button-item">Giftcards</a>
       </section>
+
+      <div id="section-game-card5">
+        <section class="giftcards">
+          <h2>GIFTCARDS</h2>
+          <div class="giftcard-buttons">
+            <button class="giftcard-button">XBOX</button>
+            <button class="giftcard-button">PS</button>
+            <button class="giftcard-button">STEAM</button>
+          </div>
+        </section>
+      </div>
 
       <div id="section-game-card1">
         <section class="game-card">
           <h2>BEST SELLER</h2>
           <div class="product-grid">
             <article class="product-card">
-              <img src="./pictures/ult.webp" alt="ULTRAKILL" />
+              <picture>
+                <source media="(min-width: 650px)" srcset="./pictures/ult_large.jpg">
+                <source media="(min-width: 465px)" srcset="./pictures/ult_medium.jpg">
+                <img src="./pictures/ult.webp" alt="ULTRAKILL">
+              </picture>
               <div class="hover-info">
                 <p>ULTRAKILL</p>
                 <p>$19.99</p>
               </div>
             </article>
             <article class="product-card">
-              <img src="./pictures/cod.jpeg" alt="Call of Duty Black Ops 6" />
+              <picture>
+                <source media="(min-width: 650px)" srcset="./pictures/cod_large.jpg">
+                <source media="(min-width: 465px)" srcset="./pictures/cod_medium.jpg">
+                <img src="./pictures/cod.jpeg" alt="Call of Duty Black Ops 6">
+              </picture>
               <div class="hover-info">
                 <p>Call of Duty Black Ops 6</p>
                 <p>$59.99</p>
               </div>
             </article>
             <article class="product-card">
-              <img src="./pictures/eld.jpg" alt="Elden Ring" />
+              <picture>
+                <source media="(min-width: 650px)" srcset="./pictures/eld_large.jpg">
+                <source media="(min-width: 465px)" srcset="./pictures/eld_medium.jpg">
+                <img src="./pictures/eld.jpg" alt="Elden Ring">
+              </picture>
               <div class="hover-info">
                 <p>Elden Ring</p>
                 <p>$49.99</p>
               </div>
             </article>
             <article class="product-card">
-              <img src="./pictures/hollow.jpg" alt="Hollow Knight" />
+              <picture>
+                <source media="(min-width: 650px)" srcset="./pictures/hollow_large.jpg">
+                <source media="(min-width: 465px)" srcset="./pictures/hollow_medium.jpg">
+                <img src="./pictures/hollow.jpg" alt="Hollow Knight">
+              </picture>
               <div class="hover-info">
                 <p>Hollow Knight</p>
                 <p>$14.99</p>
@@ -262,6 +289,7 @@
           </div>
         </section>
       </div>
+      
 
       <div id="section-platform">
         <section aria-label="Platform Categories" class="platform-section">
@@ -276,7 +304,7 @@
             <article class="platform-card">
               <div class="platform-content">
                 <img src="./pictures/pc.webp" alt="PC" />
-                <p>PC</p>
+                <p>COMPUTERS</p>
               </div>
             </article>
             <article class="platform-card">
@@ -294,7 +322,11 @@
           <h2>DEALS</h2>
           <div class="product-grid">
             <article class="product-card" data-original-price="29.99">
-              <img src="./pictures/ult.webp" alt="ULTRAKILL" />
+              <picture>
+                <source media="(min-width: 650px)" srcset="./pictures/ult_large.jpg">
+                <source media="(min-width: 465px)" srcset="./pictures/ult_medium.jpg">
+                <img src="./pictures/ult.webp" alt="ULTRAKILL">
+              </picture>
               <div class="hover-info">
                 <p>ULTRAKILL</p>
                 <p class="current-price">$19.99</p>
@@ -302,7 +334,11 @@
               </div>
             </article>
             <article class="product-card" data-original-price="79.99">
-              <img src="./pictures/cod.jpeg" alt="Call of Duty Black Ops 6" />
+              <picture>
+                <source media="(min-width: 650px)" srcset="./pictures/cod_large.jpg">
+                <source media="(min-width: 465px)" srcset="./pictures/cod_medium.jpg">
+                <img src="./pictures/cod.jpeg" alt="Call of Duty Black Ops 6">
+              </picture>
               <div class="hover-info">
                 <p>Call of Duty Black Ops 6</p>
                 <p class="current-price">$59.99</p>
@@ -310,7 +346,11 @@
               </div>
             </article>
             <article class="product-card" data-original-price="59.99">
-              <img src="./pictures/eld.jpg" alt="Elden Ring" />
+              <picture>
+                <source media="(min-width: 650px)" srcset="./pictures/eld_large.jpg">
+                <source media="(min-width: 465px)" srcset="./pictures/eld_medium.jpg">
+                <img src="./pictures/eld.jpg" alt="Elden Ring">
+              </picture>
               <div class="hover-info">
                 <p>Elden Ring</p>
                 <p class="current-price">$49.99</p>
@@ -318,7 +358,11 @@
               </div>
             </article>
             <article class="product-card" data-original-price="19.99">
-              <img src="./pictures/hollow.jpg" alt="Hollow Knight" />
+              <picture>
+                <source media="(min-width: 650px)" srcset="./pictures/hollow_large.jpg">
+                <source media="(min-width: 465px)" srcset="./pictures/hollow_medium.jpg">
+                <img src="./pictures/hollow.jpg" alt="Hollow Knight">
+              </picture>
               <div class="hover-info">
                 <p>Hollow Knight</p>
                 <p class="current-price">$14.99</p>
@@ -331,31 +375,47 @@
 
       <div id="section-game-card3">
         <section class="game-card">
-          <h2>UPCOMING GAMES</h2>
+          <h2>UPCOMING</h2>
           <div class="product-grid">
             <article class="product-card">
-              <img src="./pictures/ult.webp" alt="ULTRAKILL" />
+              <picture>
+                <source media="(min-width: 650px)" srcset="./pictures/ult_large.jpg">
+                <source media="(min-width: 465px)" srcset="./pictures/ult_medium.jpg">
+                <img src="./pictures/ult.webp" alt="ULTRAKILL">
+              </picture>
               <div class="hover-info">
                 <p>ULTRAKILL</p>
                 <p>$19.99</p>
               </div>
             </article>
             <article class="product-card">
-              <img src="./pictures/cod.jpeg" alt="Call of Duty Black Ops 6" />
+              <picture>
+                <source media="(min-width: 650px)" srcset="./pictures/cod_large.jpg">
+                <source media="(min-width: 465px)" srcset="./pictures/cod_medium.jpg">
+                <img src="./pictures/cod.jpeg" alt="Call of Duty Black Ops 6">
+              </picture>
               <div class="hover-info">
                 <p>Call of Duty Black Ops 6</p>
                 <p>$59.99</p>
               </div>
             </article>
             <article class="product-card">
-              <img src="./pictures/eld.jpg" alt="Elden Ring" />
+              <picture>
+                <source media="(min-width: 650px)" srcset="./pictures/eld_large.jpg">
+                <source media="(min-width: 465px)" srcset="./pictures/eld_medium.jpg">
+                <img src="./pictures/eld.jpg" alt="Elden Ring">
+              </picture>
               <div class="hover-info">
                 <p>Elden Ring</p>
                 <p>$49.99</p>
               </div>
             </article>
             <article class="product-card">
-              <img src="./pictures/hollow.jpg" alt="Hollow Knight" />
+              <picture>
+                <source media="(min-width: 650px)" srcset="./pictures/hollow_large.jpg">
+                <source media="(min-width: 465px)" srcset="./pictures/hollow_medium.jpg">
+                <img src="./pictures/hollow.jpg" alt="Hollow Knight">
+              </picture>
               <div class="hover-info">
                 <p>Hollow Knight</p>
                 <p>$14.99</p>
@@ -370,28 +430,44 @@
           <h2>DLC</h2>
           <div class="product-grid">
             <article class="product-card">
-              <img src="./pictures/ult.webp" alt="ULTRAKILL" />
+              <picture>
+                <source media="(min-width: 650px)" srcset="./pictures/ult_large.jpg">
+                <source media="(min-width: 465px)" srcset="./pictures/ult_medium.jpg">
+                <img src="./pictures/ult.webp" alt="ULTRAKILL">
+              </picture>
               <div class="hover-info">
                 <p>ULTRAKILL</p>
                 <p>$19.99</p>
               </div>
             </article>
             <article class="product-card">
-              <img src="./pictures/cod.jpeg" alt="Call of Duty Black Ops 6" />
+              <picture>
+                <source media="(min-width: 650px)" srcset="./pictures/cod_large.jpg">
+                <source media="(min-width: 465px)" srcset="./pictures/cod_medium.jpg">
+                <img src="./pictures/cod.jpeg" alt="Call of Duty Black Ops 6">
+              </picture>
               <div class="hover-info">
                 <p>Call of Duty Black Ops 6</p>
                 <p>$59.99</p>
               </div>
             </article>
             <article class="product-card">
-              <img src="./pictures/eld.jpg" alt="Elden Ring" />
+              <picture>
+                <source media="(min-width: 650px)" srcset="./pictures/eld_large.jpg">
+                <source media="(min-width: 465px)" srcset="./pictures/eld_medium.jpg">
+                <img src="./pictures/eld.jpg" alt="Elden Ring">
+              </picture>
               <div class="hover-info">
                 <p>Elden Ring</p>
                 <p>$49.99</p>
               </div>
             </article>
             <article class="product-card">
-              <img src="./pictures/hollow.jpg" alt="Hollow Knight" />
+              <picture>
+                <source media="(min-width: 650px)" srcset="./pictures/hollow_large.jpg">
+                <source media="(min-width: 465px)" srcset="./pictures/hollow_medium.jpg">
+                <img src="./pictures/hollow.jpg" alt="Hollow Knight">
+              </picture>
               <div class="hover-info">
                 <p>Hollow Knight</p>
                 <p>$14.99</p>
@@ -401,16 +477,7 @@
         </section>
       </div>
 
-      <div id="section-game-card5">
-        <section class="giftcards">
-          <h2>GIFTCARDS</h2>
-          <div class="giftcard-buttons">
-            <button class="giftcard-button">XBOX</button>
-            <button class="giftcard-button">PS</button>
-            <button class="giftcard-button">STEAM</button>
-          </div>
-        </section>
-      </div>
+
     </section>
 
     <footer class="site-footer">
