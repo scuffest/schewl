@@ -30,20 +30,11 @@ body {
   max-width: 100%;
 }
 
-#mobile-only {
+#mobile-only, .site-footer {
   display: block;
 }
 
-.navbar,
-.slideshow-container,
-.button-bar,
-#section-game-card1,
-#section-game-card2,
-#section-game-card3,
-#section-game-card4,
-#section-game-card5,
-#section-platform,
-.site-footer {
+.desktop-only {
   display: none;
 }
 
@@ -179,27 +170,27 @@ body {
   padding: 1rem;
   background-color: #f9f9f9;
   border-top: 1px solid #ddd;
-  max-width: 800px; /* Restrict max width for better layout */
-  margin: 0 auto; /* Center the container horizontally */
+  max-width: 800px; 
+  margin: 0 auto; 
 }
 
 .mobile-categories-title {
   font-size: 1.25rem;
   margin-bottom: 1rem;
   color: var(--black);
-  text-align: center; /* Center the title */
+  text-align: center; 
 }
 
 .mobile-categories-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Dynamically adjust columns */
-  gap: 1rem;
-  justify-content: center; /* Center the items horizontally */
+  display:flex;
+  gap: 1rem;  
+  justify-content: center; 
 }
 
 .mobile-category-item {
   background-color: var(--black);
-  height: 80px;
+  height: 10vh;
+  width:50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -270,7 +261,7 @@ body {
 .nav-btn {
   cursor: pointer;
   position: absolute;
-  top: 22%;
+  top: 50%;
   transform: translateY(-50%);
   width: auto;
   padding: 10px;
@@ -393,55 +384,70 @@ body {
 }
 
 
-.mobile-footer {
+.site-footer {
   background-color: var(--black);
-  color:var(--white);
-  padding: 20px;
+  color: var(--white);
+  padding: 2rem 1rem;
   text-align: center;
 }
 
-.footer-content {
-  max-width: 600px;
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.footer-nav {
+.footer-info {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.footer-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-info p {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.footer-links {
   display: flex;
+  gap: 1rem;
+  flex: 1 1 100%;
   justify-content: center;
-  gap: 15px;
-  margin-bottom: 15px;
 }
 
-.footer-link {
-  color: var(--white);
+.footer-links a {
+  color: #fff;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 
-.footer-link:hover {
+.footer-links a:hover {
   text-decoration: underline;
 }
 
 .footer-social {
   display: flex;
+  gap: 1rem;
+  flex: 1 1 100%;
   justify-content: center;
-  gap: 10px;
-  margin-bottom: 15px;
 }
 
-.social-link {
+.footer-social a {
   color: var(--white);
-  text-decoration: none;
-  font-size: 14px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
 }
 
-.social-link:hover {
-  color: #00aced;
-}
-
-.footer-copy {
-  font-size: 12px;
-  color: #bbb;
+.footer-social a:hover {
+  color: #1e90ff;
 }
 
 
@@ -455,28 +461,13 @@ body {
 }
 
 
-@media only screen and (min-width: 600px) {
-  .prev,
-  .next {
-    font-size: 1.125rem;
-  }
-}
 
 @media only screen and (min-width: 769px) {
   #mobile-only {
     display: none;
   }
 
-  .navbar,
-  .slideshow-container,
-  .button-bar,
-  #section-game-card1,
-  #section-game-card2,
-  #section-game-card3,
-  #section-game-card4,
-  #section-game-card5,
-  #section-platform,
-  .site-footer {
+  .desktop-only {
     display: block;
   }
 
@@ -572,6 +563,7 @@ body {
       opacity: 1;
     }
   }
+
 
   .prev,
   .next {
@@ -789,69 +781,4 @@ body {
     background-color: var(--gray);
   }
 
-  .site-footer {
-    background-color: var(--black);
-    color: var(--white);
-    padding: 2rem 1rem;
-    text-align: center;
-  }
-
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .footer-info {
-    flex: 1 1 100%;
-    text-align: center;
-  }
-
-  .footer-info h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .footer-info p {
-    font-size: 0.9rem;
-    color: #aaa;
-  }
-
-  .footer-links {
-    display: flex;
-    gap: 1rem;
-    flex: 1 1 100%;
-    justify-content: center;
-  }
-
-  .footer-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.9rem;
-  }
-
-  .footer-links a:hover {
-    text-decoration: underline;
-  }
-
-  .footer-social {
-    display: flex;
-    gap: 1rem;
-    flex: 1 1 100%;
-    justify-content: center;
-  }
-
-  .footer-social a {
-    color: var(--white);
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-  }
-
-  .footer-social a:hover {
-    color: #1e90ff;
-  }
 }

@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
   </head>
   <body>
-    <!--Mobil-->
-    <section id="mobile-only">
+    <!--Mobile-->
+  <section id="mobile-only">
       <section class="mobile-slideshow-container" aria-label="Mobile Image Slideshow">
         <article class="mobile-slide mobile-fade">
           <img src="./pictures/myth.jpg" alt="Black Myth Wukong Game" />
@@ -30,44 +30,47 @@
 
       <section class="mobile-search-bar-container">
         <form class="mobile-search-form" role="search" aria-label="Search">
-          <input type="text" class="mobile-search-input" placeholder="Search here..." aria-label="Search input"/>
+          <input type="text" class="mobile-search-input" placeholder="Search..." aria-label="Search input"/>
           <button type="submit" class="mobile-search-button" aria-label="Submit search">Search</button>
         </form>
       </section>
+      
 
       <section class="mobile-categories-container" aria-label="Categories">
         <h2 class="mobile-categories-title">Categories</h2>
         <div class="mobile-categories-grid">
-          <button class="mobile-category-item" aria-label="Bestsellers">Best sellers</button>
-          <button class="mobile-category-item" aria-label="Deals">Deals</button>
-          <button class="mobile-category-item" aria-label="Upcoming">Upcoming</button>
+          <button onclick="scrolling('mobile-game-section1')" class="mobile-category-item" aria-label="Bestsellers">Best sellers</button>
+          <button onclick="scrolling('mobile-game-section2')" class="mobile-category-item" aria-label="Deals">Deals</button>
+          <button onclick="scrolling('mobile-game-section3')" class="mobile-category-item" aria-label="Upcoming">Upcoming</button>
         </div>
       </section>
 
-      <section class="game-slideshow">
-        <h2 class="section-title">Best Sellers</h2>
-        <div class="slides-container">
-          <div class="game-slide">
-            <img src="./pictures/hollow.jpg" alt="Hollow Knight Game" class="game-image" />
-            <div class="hover-price">
-              <span>$19.99</span>
-            </div>
+      <div id="mobile-game-section1">
+        <section class="game-slideshow">
+          <h2 class="section-title">Best Sellers</h2>
+          <div class="slides-container">
+            <article class="game-slide">
+              <img src="./pictures/hollow.jpg" alt="Hollow Knight Game" class="game-image" />
+              <div class="hover-price">
+                <span>$19.99</span>
+              </div>
+            </article>
+  
+            <article class="game-slide">
+              <img src="./pictures/cod.jpeg" alt="Call Of Duty Game" class="game-image" />
+              <div class="hover-price">
+                <span>$29.99</span>
+              </div>
+            </article>
+  
+            <article class="game-slide">
+              <img src="./pictures/myth.jpg" alt="Black Myth Wukong Game" class="game-image" />
+              <div class="hover-price">
+                <span>$39.99</span>
+              </div>
+            </article>
           </div>
-
-          <div class="game-slide">
-            <img src="./pictures/cod.jpeg" alt="Call Of Duty Game" class="game-image" />
-            <div class="hover-price">
-              <span>$29.99</span>
-            </div>
-          </div>
-
-          <div class="game-slide">
-            <img src="./pictures/myth.jpg" alt="Black Myth Wukong Game" class="game-image" />
-            <div class="hover-price">
-              <span>$39.99</span>
-            </div>
-          </div>
-        </div>
+      
 
         <button class="nav-btn prev-btn" onclick="changeGameSlide(-1)">
           &#10094;
@@ -81,109 +84,87 @@
           <span class="dot" onclick="currentGameSlide(1)"></span>
           <span class="dot" onclick="currentGameSlide(2)"></span>
         </div>
+    </div>
 
-        <h2 class="titles">Deals</h2>
-        <section class="game-gallery">
-          <div class="large-game">
-            <img src="./pictures/eld.jpg" alt="Big Elden Ring Game" class="mobile-game-image" />
+    <section id="mobile-game-section2">
+      <h2 class="titles">Deals</h2>
+      <section class="game-gallery">
+        <article class="large-game">
+          <img src="./pictures/eld.jpg" alt="Big Elden Ring Game" class="mobile-game-image" />
+          <div class="price-tag">
+            <span>$49.99</span>
+          </div>
+        </article>
+        <div class="small-games">
+          <article class="small-game">
+            <img src="./pictures/cod.jpeg" alt="Small Call Of Duty Game" class="mobile-game-image"/>
             <div class="price-tag">
-              <span>$49.99</span>
+              <span>$19.99</span>
             </div>
-          </div>
-          <div class="small-games">
-            <div class="small-game">
-              <img src="./pictures/cod.jpeg" alt="Small Call Of Duty Game" class="mobile-game-image"/>
-              <div class="price-tag">
-                <span>$19.99</span>
-              </div>
+          </article>
+          <article class="small-game">
+            <img src="./pictures/warhammer.jpeg" alt="Small Warhammer Game" class="mobile-game-image"/>
+            <div class="price-tag">
+              <span>$29.99</span>
             </div>
-            <div class="small-game">
-              <img src="./pictures/warhammer.jpeg" alt="Small Warhammer Game" class="mobile-game-image"/>
-              <div class="price-tag">
-                <span>$29.99</span>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
-
-      <section>
-        <h2 class="titles">UPCOMING</h2>
-        <div class="game-grid">
-          <div class="game-box">
-            <img src="./pictures/myth.jpg" alt="Black Myth Wukong Game" class="image-phone-game">
-            <div class="game-price">
-              <span class="price">$29.99</span>
-            </div>
-          </div>
-          <div class="game-box">
-            <img src="./pictures/hollow.jpg" alt="Hollow Knight Game" class="image-phone-game">
-            <div class="game-price">
-              <span class="price">$69.99</span>
-            </div>
-          </div>
-          <div class="game-box">
-            <img src="./pictures/warhammer.jpeg" alt="Warhammer Game" class="image-phone-game">
-            <div class="game-price">
-              <span class="price">$9.99</span>
-            </div>
-          </div>
-          <div class="game-box">
-            <img src="./pictures/eld.jpg" alt="Elden Ring Game" class="image-phone-game">
-            <div class="game-price">
-              <span class="price">$39.99</span>
-            </div>
-          </div>
-          <div class="game-box">
-            <img src="./pictures/cod.jpeg" alt="Call Of Duty Game" class="image-phone-game">
-            <div class="game-price">
-              <span class="price">$79.99</span>
-            </div>
-          </div>
-          <div class="game-box">
-            <img src="./pictures/sek.jpg" alt="Sekiro Shadow Dies Twice Game" class="image-phone-game">
-            <div class="game-price">
-              <span class="price">$49.99</span>
-            </div>
-          </div>
+          </article>
         </div>
       </section>
-      
-
-      <footer class="mobile-footer">
-        <div class="footer-content">
-          <nav class="footer-nav">
-            <a href="#home" class="footer-link">Home</a>
-            <a href="#about" class="footer-link">About</a>
-            <a href="#services" class="footer-link">Services</a>
-            <a href="#contact" class="footer-link">Contact</a>
-          </nav>
-          <div class="footer-social">
-            <a href="https://facebook.com" class="social-link" aria-label="Facebook">
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://twitter.com" class="social-link" aria-label="Twitter">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://instagram.com" class="social-link" aria-label="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </div>
-          <p class="footer-copy">© 2024 Salsa Games. All Rights Reserved.</p>
-        </div>
-      </footer>
-      
-      
     </section>
+    
+
+    <section id="mobile-game-section3">
+      <h2 class="titles">UPCOMING</h2>
+      <div class="game-grid">
+        <article class="game-box">
+          <img src="./pictures/myth.jpg" alt="Black Myth Wukong Game" class="image-phone-game">
+          <div class="game-price">
+            <span class="price">$29.99</span>
+          </div>
+        </article>
+        <article class="game-box">
+          <img src="./pictures/hollow.jpg" alt="Hollow Knight Game" class="image-phone-game">
+          <div class="game-price">
+            <span class="price">$69.99</span>
+          </div>
+        </article>
+        <article class="game-box">
+          <img src="./pictures/warhammer.jpeg" alt="Warhammer Game" class="image-phone-game">
+          <div class="game-price">
+            <span class="price">$9.99</span>
+          </div>
+        </article>
+        <article class="game-box">
+          <img src="./pictures/eld.jpg" alt="Elden Ring Game" class="image-phone-game">
+          <div class="game-price">
+            <span class="price">$39.99</span>
+          </div>
+        </article>
+        <article class="game-box">
+          <img src="./pictures/cod.jpeg" alt="Call Of Duty Game" class="image-phone-game">
+          <div class="game-price">
+            <span class="price">$79.99</span>
+          </div>
+        </article>
+        <article class="game-box">
+          <img src="./pictures/sek.jpg" alt="Sekiro Shadow Dies Twice Game" class="image-phone-game">
+          <div class="game-price">
+            <span class="price">$49.99</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </section>
+
 
     <!--Desktop-->
-    <section id="desktop-only">
+    <article class="desktop-only">
       <header class="desktop">
         <nav>
           <section class="navbar">
             <div class="search-wrapper">
               <form class="search-container" role="search">
-                <input type="text" placeholder="Search bar" aria-label="Search"/>
+                <input type="text" placeholder="Search..." aria-label="Search"/>
                 <button id="search">
                   <i class="fa fa-search"></i>
                 </button>
@@ -476,9 +457,9 @@
           </div>
         </section>
       </div>
+    </article>
 
 
-    </section>
 
     <footer class="site-footer">
       <div class="footer-container">
@@ -507,6 +488,7 @@
         </aside>
       </div>
     </footer>
+
 
     <script src="script.js"></script>
   </body>

@@ -81,3 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+function scrolling(section){
+    document.getElementById(section).scrollIntoView();;
+}
